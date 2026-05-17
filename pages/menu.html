@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Emma Jane's</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <a href="../index.html" class="logo">
+            Emma Jane's
+            <span>For Real Food Lovers</span>
+        </a>
+
+        <ul class="nav-links" id="navMenu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="menu.html" class="active">Menu</a></li>
+    <li><a href="../index.html#about">About Us</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+</ul>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu">☰</button>
+    </nav>
+</header>
+
+<main>
+    <section class="menu-hero">
+        <div class="menu-hero-text">
+            <p class="section-label">Freshly made</p>
+            <h1>Our Menu</h1>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="menu-tabs">
+            <button class="menu-tab active" data-category="pancakes">Pancakes</button>
+            <button class="menu-tab" data-category="savory">Savory</button>
+            <button class="menu-tab" data-category="hot-drinks">Hot Drinks</button>
+            <button class="menu-tab" data-category="cold-drinks">Cold Drinks</button>
+            <button class="menu-tab" data-category="cakes">Cakes</button>
+            <button class="menu-tab" data-category="gluten-free">Gluten Free</button>
+            <button class="menu-tab" data-category="vegan">Vegan</button>
+            <button class="menu-tab" data-category="scones">Scones</button>
+        </div>
+
+        <div class="menu-empty" id="menuEmpty">
+            <p>Select a category to view the menu ♡</p>
+        </div>
+
+        <div class="menu-panel hidden" id="menuPanel"></div>
+    </section>
+</main>
+
+<div class="product-modal hidden" id="productModal">
+    <div class="product-modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="product-modal-card">
+        <button class="product-modal-close" id="modalClose">×</button>
+
+        <div class="product-modal-image placeholder-image" id="modalImage">
+            <span>Photo here</span>
+        </div>
+
+        <div class="product-modal-content">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+
+            <div class="product-modal-bottom">
+                <span id="modalBadge" class="product-modal-badge hidden"></span>
+                <strong id="modalPrice"></strong>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <p>Emma Jane's — For Real Food Lovers</p>
+
+    <p class="footer-contact">
+        Opening hours: Thursday – Sunday, 8:30 AM – 4:00 PM
+    </p>
+
+    <p class="footer-contact">
+        Boss / Emma:
+        <a href="tel:+353872890014">+353 87 289 0014</a>
+    </p>
+
+    <p class="developer-info">
+        Website developed by
+        <a href="mailto:andriana2005509@gmail.com">
+            andriana2005509@gmail.com
+        </a>
+    </p>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/menu.js"></script>
+
+</body>
+</html>

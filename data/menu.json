@@ -1,0 +1,493 @@
+{
+  "categories": [
+    {
+      "id": "pancakes",
+      "title": "Pancakes",
+      "subtitle": "Choose your pancakes",
+      "items": [
+        {
+  "name": "Kids Pancakes",
+  "description": "Smaller portion. Includes any 3 sauces or toppings.",
+  "price": "€7",
+  "image": "../assets/images/menu/pancakes/kids-pancakes.jpg"
+},
+{
+  "name": "Adults Pancakes",
+  "description": "Larger portion. Includes any 3 sauces or toppings.",
+  "price": "€10",
+  "image": "../assets/images/menu/pancakes/adult-pancakes.jpg"
+}
+      ],
+      "extras": {
+        "sauces": [
+          "Nutella",
+          "Biscoff",
+          "Pistachio",
+          "Caramel",
+          "Maple Syrup",
+          "Natural Yogurt",
+          "Peanut Butter",
+          "Honey"
+        ],
+        "toppings": [
+          "Marshmallows",
+          "Biscoff Crumbs",
+          "Oreo Crumbs",
+          "Granola",
+          "Berries",
+          "Banana",
+          "Almond Flakes"
+        ]
+      }
+    },
+    {
+      "id": "savory",
+      "title": "Savory",
+      "subtitle": "Wraps, salmon toast and toasties",
+      "items": [
+        {
+          "name": "Chicken Caesar Salad Wrap",
+          "ingredients": "Chicken, Caesar salad, tortilla wrap.",
+          "price": "€8"
+        },
+        {
+          "name": "Smoked Salmon Toast",
+          "ingredients": "Smoked salmon, oat bread, Marie Rose sauce.",
+          "price": "€8.50",
+          "badge": "GF"
+        },
+        {
+          "name": "Grilled Cheese Toastie",
+          "ingredients": "Four cheese blend.",
+          "price": "€6.50"
+        },
+        {
+          "name": "Honey Baked Ham + Cheese Toastie",
+          "ingredients": "Honey baked ham and cheese.",
+          "price": "€8"
+        },
+        {
+          "name": "Garlic Chicken Toastie",
+          "ingredients": "Garlic chicken, pesto, peppers and cheese.",
+          "price": "€8"
+        },
+        {
+          "name": "Roast Turkey Toastie",
+          "ingredients": "Roast turkey, stuffing, cranberry sauce and cheese.",
+          "price": "€8"
+        },
+        {
+          "name": "BBQ Beef Toastie",
+          "ingredients": "BBQ beef, onions, peppers and cheese.",
+          "price": "€8"
+        },
+        {
+          "name": "Goats Cheese Toastie",
+          "ingredients": "Goats cheese, spinach, peppers, pesto and tomato relish.",
+          "price": "€8"
+        }
+      ]
+    },
+    {
+      "id": "hot-drinks",
+      "title": "Hot Drinks",
+      "subtitle": "Coffee, tea, matcha and cosy warm drinks",
+      "note": "Alternative Milk €0.50 • Syrup €0.50",
+      "items": [
+        {
+          "name": "Espresso",
+          "price": "€2.80"
+        },
+        {
+          "name": "Americano",
+          "price": "€3.20"
+        },
+        {
+          "name": "Cappuccino",
+          "price": "€3.80"
+        },
+        {
+          "name": "Latte",
+          "price": "€3.80"
+        },
+        {
+          "name": "Flat White",
+          "price": "€3.60"
+        },
+        {
+          "name": "Mocha",
+          "price": "€4.50"
+        },
+        {
+          "name": "Dirty Chai",
+          "price": "€4.50"
+        },
+        {
+          "name": "Dark Hot Chocolate",
+          "price": "€4.00"
+        },
+        {
+          "name": "White Hot Chocolate",
+          "price": "€4.00"
+        },
+        {
+          "name": "Chai Latte",
+          "price": "€4.00"
+        },
+        {
+          "name": "Matcha Latte",
+          "price": "€4.00"
+        },
+        {
+          "name": "Vietnamese Coffee",
+          "price": "€4.50"
+        },
+        {
+          "name": "Tea / Herbal Tea",
+          "price": "€2.90"
+        },
+        {
+          "name": "Kids Hot Chocolate",
+          "price": "€2.90"
+        },
+        {
+          "name": "Babychino",
+          "price": "€1.00"
+        }
+      ]
+    },
+    {
+      "id": "cold-drinks",
+      "title": "Cold Drinks",
+      "subtitle": "Iced coffee, iced matcha and refreshing drinks",
+      "note": "Alternative Milk €0.50 • Syrup €0.50",
+      "items": [
+        {
+          "name": "Iced Americano",
+          "price": "€3.50"
+        },
+        {
+          "name": "Iced Latte",
+          "price": "€4.00"
+        },
+        {
+          "name": "Iced Mocha",
+          "price": "€4.50"
+        },
+        {
+          "name": "Iced Chai Latte",
+          "price": "€4.50"
+        },
+        {
+          "name": "Iced Matcha Latte",
+          "price": "€4.50"
+        },
+        {
+          "name": "Iced Dark Chocolate",
+          "price": "€4.50"
+        },
+        {
+          "name": "Iced White Chocolate",
+          "price": "€4.50"
+        },
+        {
+          "name": "Iced Vietnamese Coffee",
+          "price": "€4.50"
+        }
+      ]
+    },
+    {
+  
+  "id": "cakes",
+  "title": "Cakes",
+  "subtitle": "Homemade cakes and sweet treats",
+  "items": [
+    {
+      "name": "Chocolate Cake",
+      "description": "Rich chocolate cake slice.",
+      "price": "€4.50",
+      "image": "../assets/images/menu/cakes/chocolate-cake.jpg"
+    },
+    {
+      "name": "Carrot Cake",
+      "description": "Soft carrot cake slice.",
+      "price": "€4.50",
+      "image": "../assets/images/menu/cakes/carrot-cake.jpg"
+    },
+    {
+      "name": "Cheesecake",
+      "description": "Creamy cheesecake slice.",
+      "price": "€4.50",
+      "image": "../assets/images/menu/cakes/cheesecake.jpg"
+    },
+    {
+      "name": "Biscuit Cake",
+      "description": "Sweet biscuit cake slice.",
+      "price": "€3.50",
+      "image": "../assets/images/menu/cakes/biscuit-cake.jpg"
+    },
+    {
+      "name": "Brownies",
+      "description": "Rich chocolate brownies.",
+      "price": "€4.50",
+      "image": "../assets/images/menu/cakes/brownies.jpg"
+    },
+    {
+      "name": "Apple Tart",
+      "description": "Classic apple tart.",
+      "price": "€3.50",
+      "image": "../assets/images/menu/cakes/apple-tart.jpg"
+    },
+    {
+      "name": "Cinnabon",
+      "description": "Soft cinnamon bun with sweet icing.",
+      "price": "€4.00",
+      "image": "../assets/images/menu/cakes/cinnabon.jpg"
+    },
+    {
+      "name": "Berry Muffin",
+      "description": "Muffin with blueberry, raspberry and white chocolate.",
+      "price": "€3.50",
+      "image": "../assets/images/menu/cakes/berry-muffin.jpg"
+    },
+    {
+      "name": "Small Cupcake",
+      "description": "Small chocolate cupcake with colourful sprinkles.",
+      "price": "€2.50",
+      "image": "../assets/images/menu/cakes/small-cupcake.jpg"
+    },
+    {
+      "name": "Banana Bread",
+      "description": "Soft banana bread slice with chocolate chips.",
+      "price": "€3.50",
+      "image": "../assets/images/menu/cakes/banana-bread.jpg"
+    },
+    {
+      "name": "Chocolate Chip Cookies",
+      "description": "Fresh cookies with chocolate chips.",
+      "price": "€2.80",
+      "image": "../assets/images/menu/cakes/chocolate-chip-cookies.jpg"
+    },
+    {
+      "name": "Nutella Stuffed Cookie",
+      "description": "Soft cookie filled with Nutella.",
+      "price": "€4.00",
+      "image": "../assets/images/menu/cakes/nutella-stuffed-cookie.jpg"
+    },
+    {
+      "name": "Pistachio Stuffed Cookie",
+      "description": "Soft cookie filled with pistachio cream.",
+      "price": "€4.00",
+      "image": "../assets/images/menu/cakes/pistachio-stuffed-cookie.jpg"
+    },
+    {
+      "name": "Biscoff Stuffed Cookie",
+      "description": "Soft cookie filled with Biscoff spread.",
+      "price": "€4.00",
+      "image": "../assets/images/menu/cakes/biscoff-stuffed-cookie.jpg"
+    },
+    {
+      "name": "Gingerbread Men",
+      "description": "Small gingerbread treat for kids.",
+      "price": "€2.50",
+      "image": "../assets/images/menu/cakes/gingerbread-men.jpg"
+    },
+    {
+      "name": "Vegan Oat, Pistachio and Cranberry Cookie",
+      "description": "Vegan cookie with oat, pistachio and cranberry.",
+      "price": "€2.80",
+      "badge": "VG",
+      "image": "../assets/images/menu/cakes/vegan-oat-pistachio-cranberry-cookie.jpg"
+    },
+    {
+      "name": "Peanut Butter Slice with Dark Chocolate",
+      "description": "Vegan peanut butter slice with dark chocolate.",
+      "price": "€4.00",
+      "badge": "VG",
+      "image": "../assets/images/menu/cakes/peanut-butter-dark-chocolate-slice.jpg"
+    },
+    {
+      "name": "Lemon Drizzle",
+      "description": "Gluten free lemon cake with icing.",
+      "price": "€3.50",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/lemon-drizzle.jpg"
+    },
+    {
+      "name": "Flapjacks",
+      "description": "Gluten free sweet oat-based treat.",
+      "price": "€3.50",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/flapjacks.jpg"
+    },
+    {
+      "name": "Caramel Squares",
+      "description": "Gluten free caramel sweet treat.",
+      "price": "€3.50",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/caramel-squares.jpg"
+    },
+    {
+      "name": "Coconut Macaroons",
+      "description": "Gluten free sweet coconut-style treat.",
+      "price": "€2.80",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/macaroons.jpg"
+    },
+    {
+      "name": "Granola Pots",
+      "description": "Gluten free granola pot with fruit and yogurt.",
+      "price": "€4.50",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/granola-pots.jpg"
+    },
+    {
+      "name": "Doddie Biscuits",
+      "description": "Small sweet biscuits. 4 for €1.",
+      "price": "4 for €1",
+      "image": "../assets/images/menu/cakes/doddie-biscuits.jpg"
+    },
+    {
+      "name": "Jellies",
+      "description": "Small jellies. 4 for €1.",
+      "price": "4 for €1",
+      "image": "../assets/images/menu/cakes/jellies.jpg"
+    },
+    {
+      "name": "Pistachio & White Chocolate Protein Balls",
+      "description": "Protein balls with pistachio and white chocolate. €2.80 each or 2 for €5.",
+      "price": "€2.80",
+      "image": "../assets/images/menu/cakes/pistachio-white-chocolate-protein-balls.jpg"
+    },
+    {
+      "name": "Pecan Toffee Protein Balls",
+      "description": "Protein balls with pecan and toffee. €2.80 each or 2 for €5.",
+      "price": "€2.80",
+      "image": "../assets/images/menu/cakes/pecan-toffee-protein-balls.jpg"
+    }
+  ]
+},
+    {
+  "id": "gluten-free",
+  "title": "Gluten Free",
+  "subtitle": "Gluten free cakes and sweet treats",
+  "items": [
+    {
+      "name": "Lemon Drizzle",
+      "description": "Gluten free lemon cake with icing.",
+      "price": "€3.50",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/lemon-drizzle.jpg"
+    },
+    {
+      "name": "Flapjacks",
+      "description": "Sweet oat-based treat.",
+      "price": "€3.50",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/flapjacks.jpg"
+    },
+    {
+      "name": "Caramel Squares",
+      "description": "Gluten free caramel sweet treat.",
+      "price": "€3.50",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/caramel-squares.jpg"
+    },
+    {
+      "name": "Coconut Macaroons",
+      "description": "Sweet coconut-style treat.",
+      "price": "€2.80",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/macaroons.jpg"
+    },
+    {
+      "name": "Pistachio & White Chocolate Protein Balls",
+      "description": "Protein balls with pistachio and white chocolate. €2.80 each or 2 for €5.",
+      "price": "€2.80",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/pistachio-white-chocolate-protein-balls.jpg"
+    },
+    {
+      "name": "Pecan Toffee Protein Balls",
+      "description": "Protein balls with pecan and toffee. €2.80 each or 2 for €5.",
+      "price": "€2.80",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/pecan-toffee-protein-balls.jpg"
+    },
+    {
+      "name": "Granola Pots",
+      "description": "Granola pot with fruit and yogurt.",
+      "price": "€4.50",
+      "badge": "GF",
+      "image": "../assets/images/menu/cakes/granola-pots.jpg"
+    },
+    {
+      "name": "Oat Banana Blueberry Scone",
+      "description": "Gluten free oat, banana and blueberry scone. Jam and butter included.",
+      "price": "€3",
+      "badge": "GF",
+      "image": "../assets/images/menu/scones/oat-banana-blueberry-scone.jpg"
+    }
+  ]
+},
+{
+  "id": "vegan",
+  "title": "Vegan",
+  "subtitle": "Vegan cookies and slices",
+  "items": [
+    {
+      "name": "Vegan Oat, Pistachio and Cranberry Cookie",
+      "description": "Vegan cookie with oat, pistachio and cranberry.",
+      "price": "€2.80",
+      "badge": "VG",
+      "image": "../assets/images/menu/cakes/vegan-oat-pistachio-cranberry-cookie.jpg"
+    },
+    {
+      "name": "Peanut Butter Slice with Dark Chocolate",
+      "description": "Vegan peanut butter slice with dark chocolate.",
+      "price": "€4.00",
+      "badge": "VG",
+      "image": "../assets/images/menu/cakes/peanut-butter-dark-chocolate-slice.jpg"
+    }
+  ]
+},
+    {
+  "id": "scones",
+  "title": "Scones",
+  "subtitle": "Fresh scones with jam and butter",
+  "items": [
+    {
+      "name": "Raisin",
+      "description": "Classic raisin scone. Jam and butter included.",
+      "price": "€3",
+      "image": "../assets/images/menu/scones/raisin-scone.jpg"
+    },
+    {
+      "name": "Pear Cinnamon Walnut",
+      "description": "Pear, cinnamon and walnut scone. Jam and butter included.",
+      "price": "€3",
+      "image": "../assets/images/menu/scones/pear-cinnamon-walnut-scone.jpg"
+    },
+    {
+      "name": "Blueberry",
+      "description": "Fresh blueberry scone. Jam and butter included.",
+      "price": "€3",
+      "image": "../assets/images/menu/scones/blueberry-scone.jpg"
+    },
+    {
+      "name": "Raspberry & White Chocolate",
+      "description": "Raspberry and white chocolate scone. Jam and butter included.",
+      "price": "€3",
+      "image": "../assets/images/menu/scones/raspberry-white-chocolate-scone.jpg"
+    },
+    {
+      "name": "Oat Banana and Blueberry",
+      "description": "Gluten free oat, banana and blueberry scone. Jam and butter included.",
+      "price": "€3",
+      "badge": "GF",
+        "image": "../assets/images/menu/scones/gluten-free-oat-banana-blueberry-scone.jpg"
+      }
+  ]
+}
+  ]
+}
