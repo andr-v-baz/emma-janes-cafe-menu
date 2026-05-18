@@ -193,31 +193,30 @@ a {
 /* Footer */
 
 .footer {
-    padding: 28px 8%;
+    padding: 16px 20px;
     text-align: center;
-    background-color: #2e2a22;
+    background: #2b251d;
     color: #fbf6ea;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .footer-contact,
 .developer-info {
-    margin-top: 8px;
-    font-size: 13px;
-    color: rgba(251, 246, 234, 0.75);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 4px;
 }
 
-.footer a,
-.developer-info a {
-    color: #fbf6ea;
-    font-weight: 700;
-}
-#about {
-    scroll-margin-top: 50px;
+.footer a {
+    color: #ffffff;
+    font-weight: 800;
 }
 
-#contact {
-    scroll-margin-top: 140px;
-}
 
 .footer a:hover,
 .developer-info a:hover {

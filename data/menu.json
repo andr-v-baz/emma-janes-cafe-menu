@@ -4,6 +4,7 @@
       "id": "pancakes",
       "title": "Pancakes",
       "subtitle": "Choose your pancakes",
+       "note": "Served Saturday and Sunday from 9:30 AM to 12:30 PM.",
       "items": [
         {
   "name": "Kids Pancakes",
@@ -92,7 +93,7 @@
       "id": "hot-drinks",
       "title": "Hot Drinks",
       "subtitle": "Coffee, tea, matcha and cosy warm drinks",
-      "note": "Alternative Milk €0.50 • Syrup €0.50",
+      "note": "Decaf available • Alternative milk €0.50 • Syrup €0.50",
       "items": [
         {
           "name": "Espresso",
@@ -160,7 +161,7 @@
       "id": "cold-drinks",
       "title": "Cold Drinks",
       "subtitle": "Iced coffee, iced matcha and refreshing drinks",
-      "note": "Alternative Milk €0.50 • Syrup €0.50",
+      "note": "Decaf available • Alternative milk €0.50 • Syrup €0.50",
       "items": [
         {
           "name": "Iced Americano",

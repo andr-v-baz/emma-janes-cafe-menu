@@ -13,7 +13,7 @@
 
 <header class="header">
     <nav class="navbar">
-        <a href="../index.html" class="logo">
+        <a href="#menuTop" class="logo">
             Emma Jane's
             <span>For Real Food Lovers</span>
         </a>
@@ -30,7 +30,7 @@
 </header>
 
 <main>
-    <section class="menu-hero">
+    <section class="menu-hero" id="menuTop">
         <div class="menu-hero-text">
             <p class="section-label">Freshly made</p>
             <h1>Our Menu</h1>
@@ -100,6 +100,29 @@
 
 <script src="../assets/js/main.js"></script>
 <script src="../assets/js/menu.js"></script>
+<button class="mobile-allergen-btn hidden" id="mobileAllergenBtn">
+    Allergens
+</button>
 
+<div class="mobile-allergen-modal hidden" id="mobileAllergenModal">
+    <div class="mobile-allergen-card">
+        <button class="mobile-allergen-close" id="mobileAllergenClose">×</button>
+
+        <h3>Allergen Key ♡</h3>
+        <p>Use the numbers beside desserts and pancakes to check allergens.</p>
+
+        <div class="mobile-allergen-list">
+            <div><span>1</span> Milk</div>
+            <div><span>2</span> Eggs</div>
+            <div><span>3</span> Gluten</div>
+            <div><span>4</span> Nuts</div>
+            <div><span>5</span> Soy</div>
+            <div><span>6</span> Sesame</div>
+            <div><span>7</span> Peanuts</div>
+            <div><span>8</span> Tree nuts</div>
+            <div><span>11</span> Oats</div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

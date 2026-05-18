@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (name.includes("gingerbread")) return "(1,3,7)";
             if (name.includes("cookie")) return "(1,3,6,7)";
             if (name.includes("brownie")) return "(1,3,6,7)";
-            if (name.includes("carrot")) return "(1,3,7,8)";
+            if (name.includes("carrot")) return "(1,3,4,7,8)";
             if (name.includes("cheesecake")) return "(1,3,7,8)";
             if (name.includes("apple")) return "(1,3,7)";
             return "(1,3)";
@@ -417,10 +417,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let html = `
             <div class="menu-panel-top ${showCategoryPhoto ? "" : "without-photo"}">
-                <div class="menu-panel-text">
-                    <p class="section-label">${category.title}</p>
-                    <h2>${category.subtitle}</h2>
-                </div>
+               <div class="menu-panel-text">
+    <p class="section-label">${category.title}</p>
+    <h2>${category.subtitle}</h2>
+    ${category.note ? `<p class="category-note">${category.note}</p>` : ""}
+</div>
 
                 ${
                     showCategoryPhoto
@@ -527,7 +528,15 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
 
         menuPanel.innerHTML = html;
+const mobileAllergenBtn = document.getElementById("mobileAllergenBtn");
 
+if (mobileAllergenBtn) {
+    if (showAllergenSidebar) {
+        mobileAllergenBtn.classList.remove("hidden");
+    } else {
+        mobileAllergenBtn.classList.add("hidden");
+    }
+}
         menuPanel.querySelectorAll(".drink-subtab").forEach(function (button) {
             button.addEventListener("click", function () {
                 currentDrinkSubTab = button.dataset.drinkTab;
@@ -555,4 +564,41 @@ document.addEventListener("DOMContentLoaded", function () {
             openCategory(tab.dataset.category);
         });
     });
+const mobileAllergenBtn = document.getElementById("mobileAllergenBtn");
+const mobileAllergenModal = document.getElementById("mobileAllergenModal");
+const mobileAllergenClose = document.getElementById("mobileAllergenClose");
+
+function closeMobileAllergens() {
+    if (!mobileAllergenModal) {
+        return;
+    }
+
+    mobileAllergenModal.classList.add("hidden");
+    document.body.style.overflow = "";
+}
+
+if (mobileAllergenBtn && mobileAllergenModal) {
+    mobileAllergenBtn.addEventListener("click", function () {
+        mobileAllergenModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+    });
+}
+
+if (mobileAllergenClose) {
+    mobileAllergenClose.addEventListener("click", closeMobileAllergens);
+}
+
+if (mobileAllergenModal) {
+    mobileAllergenModal.addEventListener("click", function (event) {
+        if (event.target === mobileAllergenModal) {
+            closeMobileAllergens();
+        }
+    });
+}
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+        closeMobileAllergens();
+    }
+});
 });

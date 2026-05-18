@@ -28,6 +28,10 @@
 }
 
 /* Menu hero */
+.mobile-allergen-btn,
+.mobile-allergen-modal {
+    display: none;
+}
 
 .menu-hero {
     min-height: 280px;
@@ -179,8 +183,20 @@
     color: #2e5e3d;
     margin-bottom: 12px;
 }
-
-.menu-panel-text > p:not(.section-label) {
+.category-note {
+    display: inline-block;
+    max-width: 620px;
+    margin-top: 12px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #f3ead6;
+    color: #6f4f34;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+.menu-panel-text > p:not(.section-label):not(.category-note) {
     display: none;
 }
 
@@ -669,12 +685,40 @@
     background: #fffaf0;
     border: 1px solid #eadbc5;
     border-radius: 28px;
-    overflow: hidden;
+    overflow-y: auto;
     box-shadow: 0 18px 40px rgba(46, 42, 34, 0.12);
+
     position: sticky;
-    top: 140px;
+    top: 205px;
+    max-height: calc(100vh - 200px);
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
+.allergen-key::-webkit-scrollbar {
+    display: none;
+}
+
+.allergen-key::after {
+    content: "⌄";
+    position: sticky;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 14px 0 10px;
+    text-align: center;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 250, 240, 0),
+        rgba(255, 250, 240, 0.92) 45%,
+        #fffaf0 100%
+    );
+    color: #2e5e3d;
+    font-size: 22px;
+    font-weight: 800;
+    pointer-events: none;
+}
 .allergen-key-header {
     background: #2e5e3d;
     color: #ffffff;
@@ -700,7 +744,6 @@
     display: grid;
     gap: 14px;
 }
-
 .allergen-item {
     background: #fffdf7;
     border: 1px solid #eadbc5;
@@ -731,6 +774,7 @@
     font-size: 13px;
     line-height: 1.6;
     color: #51483d;
+    flex-shrink: 0;
 }
 
 /* Modal */
@@ -898,7 +942,48 @@ body.modal-open {
     }
 
     .menu-tabs {
-        top: 0;
+        position: static;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 12px 5% 14px;
+        margin-left: -2%;
+        margin-right: -2%;
+        margin-bottom: 30px;
+        background: rgba(251, 246, 234, 0.92);
+        border-bottom: 1px solid rgba(216, 199, 168, 0.35);
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .menu-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu-tab {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 13px 24px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .modern-menu-grid,
+    .scones-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .menu-photo {
+        height: 250px;
+    }
+
+    .menu-main-card {
+        padding: 28px;
     }
 }
 
@@ -992,7 +1077,7 @@ body.modal-open {
             linear-gradient(
                 90deg,
                 rgba(251, 246, 234, 0.9) 0%,
-                rgba(251, 246, 234, 0.7) 45%,
+                rgba(251, 246, 234, 0.2) 45%,
                 rgba(251, 246, 234, 0.38) 100%
             ),
             url("../images/hero/menu-hero.jpg");
@@ -1012,9 +1097,26 @@ body.modal-open {
         letter-spacing: 3px;
     }
 
-    .menu-section {
+     .menu-section {
+        position: relative;
         padding-left: 2%;
         padding-right: 2%;
+    }
+
+    .menu-section::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70px;
+        height: 86px;
+        pointer-events: none;
+        z-index: 60;
+        background: linear-gradient(
+            90deg,
+            rgba(251, 246, 234, 0),
+            rgba(251, 246, 234, 0.95)
+        );
     }
 
     .menu-tabs {
@@ -1035,6 +1137,7 @@ body.modal-open {
     .menu-tabs::-webkit-scrollbar {
         display: none;
     }
+
 
     .menu-tab {
         flex: 0 0 112px;
@@ -1187,5 +1290,135 @@ body.modal-open {
     .scones-offer-content div {
         width: 100%;
         text-align: center;
+    }
+     .mobile-allergen-btn {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 999;
+        display: block;
+        padding: 13px 20px;
+        border: none;
+        border-radius: 999px;
+        background: #2e5e3d;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 800;
+        box-shadow: 0 12px 28px rgba(46, 42, 34, 0.25);
+        cursor: pointer;
+    }
+
+    .mobile-allergen-btn.hidden {
+        display: none;
+    }
+
+    .mobile-allergen-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background: rgba(34, 30, 25, 0.35);
+        backdrop-filter: blur(6px);
+    }
+
+    .mobile-allergen-modal.hidden {
+        display: none;
+    }
+
+    .mobile-allergen-card {
+        width: 100%;
+        max-height: 78vh;
+        overflow-y: auto;
+        padding: 28px 24px 32px;
+        border-radius: 28px 28px 0 0;
+        background: #fffaf0;
+        border: 1px solid #eadbc5;
+        box-shadow: 0 -18px 50px rgba(46, 42, 34, 0.22);
+        position: relative;
+    }
+
+    .mobile-allergen-close {
+        position: absolute;
+        top: 16px;
+        right: 18px;
+        width: 38px;
+        height: 38px;
+        border: none;
+        border-radius: 50%;
+        background: #f3ead6;
+        color: #2e5e3d;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .mobile-allergen-card h3 {
+        font-family: Georgia, serif;
+        font-size: 34px;
+        color: #2e5e3d;
+        margin-bottom: 12px;
+    }
+
+    .mobile-allergen-card p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #51483d;
+        margin-bottom: 20px;
+    }
+
+    .mobile-allergen-list {
+        display: grid;
+        gap: 12px;
+    }
+
+    .mobile-allergen-list div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 16px;
+        border-radius: 18px;
+        border: 1px solid #eadbc5;
+        background: #fbf6ea;
+        font-size: 16px;
+        font-weight: 700;
+        color: #51483d;
+    }
+
+    .mobile-allergen-list span {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #f3ead6;
+        color: #2e5e3d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+    }
+.allergen-key {
+        display: none;
+    }
+     .footer {
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .footer-title {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 6px;
+    }
+
+    .footer-contact,
+    .developer-info {
+        font-size: 12px;
+        line-height: 1.55;
+        margin-bottom: 3px;
+    }
+
+    .footer a {
+        font-size: 12px;
+        word-break: break-word;
     }
 }

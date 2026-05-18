@@ -13,6 +13,8 @@ if (hamburgerBtn && navMenu) {
     });
 }
 
+/* Story popup */
+
 const openStoryBtn = document.getElementById("openStoryBtn");
 const openStoryNav = document.getElementById("openStoryNav");
 const closeStoryBtn = document.getElementById("closeStoryBtn");
@@ -69,3 +71,54 @@ if (storyTransition) {
         }, 300);
     }
 }
+
+/* Ingredients popup */
+
+const openIngredientsBtn = document.getElementById("openIngredientsBtn");
+const closeIngredientsBtn = document.getElementById("closeIngredientsBtn");
+const ingredientsModal = document.getElementById("ingredientsModal");
+
+function openIngredients() {
+    if (!ingredientsModal) {
+        return;
+    }
+
+    ingredientsModal.classList.add("active");
+    document.body.style.overflow = "hidden";
+
+    if (navMenu) {
+        navMenu.classList.remove("show");
+    }
+}
+
+function closeIngredients() {
+    if (!ingredientsModal) {
+        return;
+    }
+
+    ingredientsModal.classList.remove("active");
+    document.body.style.overflow = "";
+}
+
+if (openIngredientsBtn) {
+    openIngredientsBtn.addEventListener("click", openIngredients);
+}
+
+if (closeIngredientsBtn) {
+    closeIngredientsBtn.addEventListener("click", closeIngredients);
+}
+
+if (ingredientsModal) {
+    ingredientsModal.addEventListener("click", function (event) {
+        if (event.target === ingredientsModal) {
+            closeIngredients();
+        }
+    });
+}
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+        closeStory();
+        closeIngredients();
+    }
+});
