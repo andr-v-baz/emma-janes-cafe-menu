@@ -42,53 +42,84 @@
       }
     },
     {
-      "id": "savory",
-      "title": "Savory",
-      "subtitle": "Wraps, salmon toast and toasties",
-      "items": [
-        {
-          "name": "Chicken Caesar Salad Wrap",
-          "ingredients": "Chicken, Caesar salad, tortilla wrap.",
-          "price": "€8"
-        },
-        {
-          "name": "Smoked Salmon Toast",
-          "ingredients": "Smoked salmon, oat bread, Marie Rose sauce.",
-          "price": "€8.50",
-          "badge": "GF"
-        },
-        {
-          "name": "Grilled Cheese Toastie",
-          "ingredients": "Four cheese blend.",
-          "price": "€6.50"
-        },
-        {
-          "name": "Honey Baked Ham + Cheese Toastie",
-          "ingredients": "Honey baked ham and cheese.",
-          "price": "€8"
-        },
-        {
-          "name": "Garlic Chicken Toastie",
-          "ingredients": "Garlic chicken, pesto, peppers and cheese.",
-          "price": "€8"
-        },
-        {
-          "name": "Roast Turkey Toastie",
-          "ingredients": "Roast turkey, stuffing, cranberry sauce and cheese.",
-          "price": "€8"
-        },
-        {
-          "name": "BBQ Beef Toastie",
-          "ingredients": "BBQ beef, onions, peppers and cheese.",
-          "price": "€8"
-        },
-        {
-          "name": "Goats Cheese Toastie",
-          "ingredients": "Goats cheese, spinach, peppers, pesto and tomato relish.",
-          "price": "€8"
-        }
-      ]
+  "id": "savory",
+  "title": "Savory",
+  "subtitle": "Toasties, wraps and fresh savoury bites",
+  "items": [
+    {
+  "name": "Sausage Roll",
+  "description": "Warm sausage roll with apple, black pudding and minced meat.",
+  "ingredients": "Apple, black pudding and minced meat.",
+  "price": "€5",
+  "image": "../assets/images/menu/savory/sausage-roll.jpg"
+},
+    {
+      "name": "Chicken Caesar Wrap",
+      "description": "Chicken Caesar salad in a soft tortilla wrap.",
+      "ingredients": "Chicken, Caesar salad, tortilla wrap.",
+      "price": "€8",
+      "image": "../assets/images/menu/savory/chicken-caesar-wrap.jpg"
     },
+    {
+      "name": "Smoked Salmon Toast",
+      "description": "Smoked salmon served on oat bread with Marie Rose sauce.",
+      "ingredients": "Smoked salmon, oat bread, Marie Rose sauce.",
+      "price": "€8.50",
+      "badge": "GF",
+      "image": "../assets/images/menu/savory/smoked-salmon-toast.jpg"
+    },
+    {
+      "name": "Grilled Cheese Toastie",
+      "description": "Warm toastie with a rich four cheese blend.",
+      "ingredients": "Four cheese blend.",
+      "price": "€6.50",
+      "image": "../assets/images/menu/savory/grilled-cheese-toastie.jpg"
+    },
+    {
+      "name": "Ham & Cheese Toastie",
+      "description": "Classic honey baked ham and cheese toastie.",
+      "ingredients": "Honey baked ham and cheese.",
+      "price": "€8",
+      "image": "../assets/images/menu/savory/ham-cheese-toastie.jpg"
+    },
+    {
+      "name": "Garlic Chicken Toastie",
+      "description": "Garlic chicken toastie with pesto, peppers and melted cheese.",
+      "ingredients": "Garlic chicken, pesto, peppers and cheese.",
+      "price": "€8",
+      "image": "../assets/images/menu/savory/garlic-chicken-toastie.jpg"
+    },
+    {
+      "name": "Roast Turkey Toastie",
+      "description": "Roast turkey toastie with stuffing, cranberry sauce and cheese.",
+      "ingredients": "Roast turkey, stuffing, cranberry sauce and cheese.",
+      "price": "€8",
+      "image": "../assets/images/menu/savory/roast-turkey-toastie.jpg"
+    },
+    {
+      "name": "BBQ Beef Toastie",
+      "description": "BBQ beef toastie with onions, peppers and cheese.",
+      "ingredients": "BBQ beef, onions, peppers and cheese.",
+      "price": "€8",
+      "image": "../assets/images/menu/savory/bbq-beef-toastie.jpg"
+    },
+    {
+      "name": "Goats Cheese Toastie",
+      "description": "Goats cheese toastie with spinach, peppers, pesto and tomato relish.",
+      "ingredients": "Goats cheese, spinach, peppers, pesto and tomato relish.",
+      "price": "€8",
+      "image": "../assets/images/menu/savory/goats-cheese-toastie.jpg"
+    },
+    {
+      "name": "Curried Chickpea Toastie",
+      "description": "Curried chickpea with mango chutney, spinach, peppers and vegan cheese.",
+      "ingredients": "Curried chickpea, mango chutney, spinach, peppers and vegan cheese.",
+      "price": "€8",
+      "badge": "VG",
+      "image": "../assets/images/menu/savory/curried-chickpea-toastie.jpg"
+    }
+  ]
+},
     {
       "id": "hot-drinks",
       "title": "Hot Drinks",
@@ -197,6 +228,104 @@
         }
       ]
     },
+   {
+  "id": "soft-drinks",
+  "title": "Soft Drinks",
+  "subtitle": "Cans, water, juice and refreshing bottled drinks",
+  "items": [
+    {
+      "name": "Coca-Cola",
+      "price": "€2.20"
+    },
+    {
+      "name": "Coca-Cola Zero",
+      "price": "€2.20"
+    },
+    {
+      "name": "Diet Coke",
+      "price": "€2.20"
+    },
+    {
+      "name": "7UP",
+      "price": "€2.20"
+    },
+    {
+      "name": "Sanpellegrino Lemon",
+      "price": "€2.50"
+    },
+    {
+      "name": "Sanpellegrino Orange & Pomegranate",
+      "price": "€2.50"
+    },
+    {
+      "name": "Vit Hit",
+      "price": "€3"
+    },
+    {
+      "name": "Still Water",
+      "price": "€2"
+    },
+    {
+      "name": "Sparkling Water",
+      "price": "€2"
+    },
+    {
+      "name": "Ribena",
+      "price": "€2"
+    },
+    {
+      "name": "Apple Juice",
+      "price": "€2"
+    },
+    {
+      "name": "Orange Juice",
+      "price": "€2"
+    }
+  ]
+},
+{
+  "id": "ice-cream",
+  "title": "Ice Cream",
+  "subtitle": "Morelli ice cream tubs",
+  "image": "../assets/images/menu/ice-cream/morelli-ice-cream.jpg",
+  "items": [
+    {
+      "name": "Strawberry",
+      "description": "Morelli strawberry ice cream tub.",
+      "price": "€3"
+    },
+    {
+      "name": "Chocolate",
+      "description": "Morelli chocolate ice cream tub.",
+      "price": "€3"
+    },
+    {
+      "name": "Honeycomb",
+      "description": "Morelli honeycomb ice cream tub.",
+      "price": "€3"
+    },
+    {
+      "name": "Mint & Belgian Chocolate Chip",
+      "description": "Morelli mint ice cream with Belgian chocolate chips.",
+      "price": "€3"
+    },
+    {
+      "name": "Cookies & Cream",
+      "description": "Morelli cookies and cream ice cream tub.",
+      "price": "€3"
+    },
+    {
+      "name": "Sea Salted Caramel",
+      "description": "Morelli sea salted caramel ice cream tub.",
+      "price": "€3"
+    },
+    {
+      "name": "Double Cream Vanilla",
+      "description": "Morelli double cream vanilla ice cream tub.",
+      "price": "€3"
+    }
+  ]
+},
     {
   
   "id": "cakes",
@@ -427,7 +556,8 @@
       "description": "Gluten free oat, banana and blueberry scone. Jam and butter included.",
       "price": "€3",
       "badge": "GF",
-      "image": "../assets/images/menu/scones/oat-banana-blueberry-scone.jpg"
+      "image": "../assets/images/menu/scones/gluten-free-oat-banana-blueberry-scone.jpg"
+      
     }
   ]
 },

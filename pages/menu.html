@@ -37,24 +37,33 @@
         </div>
     </section>
 
-    <section class="menu-section">
+  <section class="menu-section">
+
+    <div class="menu-tabs-area">
+        <button class="menu-scroll-btn menu-scroll-left" type="button">‹</button>
+
         <div class="menu-tabs">
             <button class="menu-tab active" data-category="pancakes">Pancakes</button>
             <button class="menu-tab" data-category="savory">Savory</button>
             <button class="menu-tab" data-category="hot-drinks">Hot Drinks</button>
             <button class="menu-tab" data-category="cold-drinks">Cold Drinks</button>
+            <button class="menu-tab" data-category="soft-drinks">Soft Drinks</button>
+            <button class="menu-tab" data-category="ice-cream">Ice Cream</button>
             <button class="menu-tab" data-category="cakes">Cakes</button>
             <button class="menu-tab" data-category="gluten-free">Gluten Free</button>
             <button class="menu-tab" data-category="vegan">Vegan</button>
             <button class="menu-tab" data-category="scones">Scones</button>
         </div>
 
-        <div class="menu-empty" id="menuEmpty">
-            <p>Select a category to view the menu ♡</p>
-        </div>
+        <button class="menu-scroll-btn menu-scroll-right" type="button">›</button>
+    </div>
 
-        <div class="menu-panel hidden" id="menuPanel"></div>
-    </section>
+    <div class="menu-empty" id="menuEmpty">
+        <p>Select a category to view the menu ♡</p>
+    </div>
+
+    <div class="menu-panel hidden" id="menuPanel"></div>
+</section>
 </main>
 
 <div class="product-modal hidden" id="productModal">

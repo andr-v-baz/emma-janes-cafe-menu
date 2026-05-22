@@ -80,19 +80,38 @@
 /* Category navigation */
 
 .menu-tabs {
-    position: sticky;
-    top: 112px;
-    z-index: 50;
+   position: sticky;
+    top: 0;
+    z-index: 90;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 14px;
     margin-bottom: 46px;
     padding: 14px 0;
-    background: rgba(251, 246, 234, 0.9);
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: rgba(251, 246, 234, 0.94);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(216, 199, 168, 0.35);
+    scrollbar-width: none;
 }
+.menu-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-tab {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+/* Menu scroll arrows - desktop only */
+
+.menu-scroll-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .menu-tab {
     padding: 14px 28px;
@@ -1371,7 +1390,64 @@ body.modal-open {
         display: grid;
         gap: 12px;
     }
+/* 1. Sausage Roll */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(1) .modern-menu-photo img {
+    object-position: 50% 60%;
+    transform: scale(1);
+}
+/* 2. Chicken Caesar Wrap */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(2) .modern-menu-photo img {
+    object-position: 50% 50%;
+    transform: scale(1);
+}
 
+/* 3. Smoked Salmon Toast */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(3) .modern-menu-photo img {
+    object-position: 50% 50%;
+    transform: scale(1);
+}
+
+/* 4. Grilled Cheese Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(4) .modern-menu-photo img {
+    object-position: 50% 85%;
+    transform: scale(1);
+}
+
+/* 5. Ham & Cheese Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(5) .modern-menu-photo img {
+    object-position: 50% 60%;
+    transform: scale(1);
+}
+
+/* 6. Garlic Chicken Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(6) .modern-menu-photo img {
+    object-position: 60% 85%;
+    transform: scale(1);
+}
+
+/* 7. Roast Turkey Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(7) .modern-menu-photo img {
+    object-position: 10% 80%;
+    transform: scale(1);
+}
+
+/* 8. BBQ Beef Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(8) .modern-menu-photo img {
+    object-position: 50% 80%;
+    transform: scale(1);
+}
+
+/* 9. Goats Cheese Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(9) .modern-menu-photo img {
+    object-position: 50% 50%;
+    transform: scale(1);
+}
+
+/* 10. Curried Chickpea Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(10) .modern-menu-photo img {
+    object-position: 50% 70%;
+    transform: scale(1);
+}
     .mobile-allergen-list div {
         display: flex;
         align-items: center;
@@ -1422,3 +1498,260 @@ body.modal-open {
         word-break: break-word;
     }
 }
+
+/* =========================================================
+   Sticky category tabs + desktop scroll arrows
+   Only this block was added/changed for category scrolling.
+========================================================= */
+
+/* Wrapper for tabs and arrows */
+.menu-tabs-area {
+    position: sticky;
+    top: 78px;
+    z-index: 950;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 46px;
+    padding: 12px 8%;
+    background: rgba(251, 246, 234, 0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(216, 199, 168, 0.35);
+}
+
+/* Make category row sticky on every screen size */
+.menu-tabs {
+    position: sticky !important;
+    top: 78px;
+    z-index: 950;
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 14px;
+    margin: 0;
+    padding: 8px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    background: transparent;
+    border-bottom: none;
+    scrollbar-width: none;
+}
+
+.menu-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+/* Desktop arrows */
+.menu-scroll-btn {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d8c7a8;
+    border-radius: 50%;
+    background: #fffaf0;
+    color: #2e5e3d;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(46, 42, 34, 0.08);
+    transition: 0.25s ease;
+}
+
+.menu-scroll-btn:hover {
+    background: #2e5e3d;
+    color: #ffffff;
+    border-color: #2e5e3d;
+    transform: translateY(-1px);
+}
+
+/* Hide arrows on smaller screens, but keep categories sticky */
+@media (max-width: 900px) {
+    .menu-tabs-area {
+        top: 68px;
+        gap: 0;
+        padding: 10px 5%;
+        margin-bottom: 30px;
+    }
+
+    .menu-tabs {
+        position: sticky !important;
+        top: 68px;
+        justify-content: flex-start;
+        gap: 10px;
+        margin: 0;
+        padding: 8px 0 10px;
+    }
+
+    .menu-scroll-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu-tabs-area {
+        top: 64px;
+        padding: 8px 2%;
+    }
+
+    .menu-tabs {
+        position: sticky !important;
+        top: 64px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-tabs-area {
+        top: 64px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .menu-tabs {
+        position: sticky !important;
+        top: 64px;
+    }
+}
+/* =========================================================
+   Sticky category tabs + desktop scroll arrows
+========================================================= */
+
+.menu-tabs-area {
+    position: sticky;
+    top: 96px;
+    z-index: 950;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 -8% 46px;
+    padding: 10px 8%;
+    background: rgba(251, 246, 234, 0.98);
+    backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(216, 199, 168, 0.45);
+    border-bottom: 1px solid rgba(216, 199, 168, 0.65);
+    box-shadow: 0 10px 28px rgba(46, 42, 34, 0.12);
+}
+
+.menu-tabs {
+    position: relative !important;
+    top: auto !important;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 0 !important;
+    padding: 6px 0 !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    background: transparent !important;
+    border-bottom: none !important;
+    scrollbar-width: none;
+}
+
+.menu-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-tab {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: auto;
+    padding: 12px 22px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    white-space: nowrap;
+}
+
+.menu-scroll-btn {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2e5e3d;
+    border-radius: 50%;
+    background: #fffaf0;
+    color: #2e5e3d;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(46, 42, 34, 0.14);
+    transition: 0.25s ease;
+}
+
+.menu-scroll-btn:hover {
+    background: #2e5e3d;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 1200px) {
+    .menu-tab {
+        padding: 11px 18px;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu-tabs-area {
+        top: 74px;
+        gap: 0;
+        margin: 0 -5% 30px;
+        padding: 9px 5%;
+    }
+
+    .menu-tabs {
+        position: relative !important;
+        top: auto !important;
+        gap: 10px;
+        padding: 6px 0 !important;
+    }
+
+    .menu-tab {
+        padding: 12px 22px;
+        font-size: 12px;
+    }
+
+    .menu-scroll-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu-tabs-area {
+        top: 66px;
+        margin: 0 -2% 28px;
+        padding: 8px 2%;
+    }
+
+    .menu-tabs {
+        position: relative !important;
+        top: auto !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-tabs-area {
+        position: sticky;
+        top: 100px;
+        z-index: 999;
+    }
+
+    .menu-tabs {
+        position: relative !important;
+        top: auto !important;
+    }
+ }

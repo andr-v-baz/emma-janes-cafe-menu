@@ -137,9 +137,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 250);
     }
 
-    function isDrinkCategory(categoryId) {
-        return categoryId === "hot-drinks" || categoryId === "cold-drinks";
-    }
+  function isDrinkCategory(categoryId) {
+    return (
+        categoryId === "hot-drinks" ||
+        categoryId === "cold-drinks" ||
+        categoryId === "soft-drinks" ||
+        categoryId === "ice-cream"
+    );
+}
+
+function hasDrinkSubtabs(categoryId) {
+    return categoryId === "hot-drinks" || categoryId === "cold-drinks";
+}
 
     function getCategoryPhoto(categoryId) {
         if (categoryId === "hot-drinks") {
@@ -332,9 +341,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function createDrinkSubTabs(category) {
-        if (!isDrinkCategory(category.id)) {
-            return "";
-        }
+       if (!hasDrinkSubtabs(category.id)) {
+    return "";
+}
 
         if (category.id === "cold-drinks") {
             return `
@@ -412,8 +421,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const showAllergenSidebar = shouldShowAllergens(category.id);
         const itemsToShow = getItemsForCategory(category);
-        const showCategoryPhoto = category.id === "hot-drinks" || category.id === "cold-drinks";
-        const categoryPhoto = getCategoryPhoto(category.id);
+        const categoryPhoto = category.image || getCategoryPhoto(category.id);
+const showCategoryPhoto = Boolean(categoryPhoto);
 
         let html = `
             <div class="menu-panel-top ${showCategoryPhoto ? "" : "without-photo"}">
@@ -564,6 +573,25 @@ if (mobileAllergenBtn) {
             openCategory(tab.dataset.category);
         });
     });
+    const menuTabsContainer = document.querySelector(".menu-tabs");
+const leftScrollBtn = document.querySelector(".menu-scroll-left");
+const rightScrollBtn = document.querySelector(".menu-scroll-right");
+
+if (menuTabsContainer && leftScrollBtn && rightScrollBtn) {
+    leftScrollBtn.addEventListener("click", function () {
+        menuTabsContainer.scrollBy({
+            left: -280,
+            behavior: "smooth"
+        });
+    });
+
+    rightScrollBtn.addEventListener("click", function () {
+        menuTabsContainer.scrollBy({
+            left: 280,
+            behavior: "smooth"
+        });
+    });
+}
 const mobileAllergenBtn = document.getElementById("mobileAllergenBtn");
 const mobileAllergenModal = document.getElementById("mobileAllergenModal");
 const mobileAllergenClose = document.getElementById("mobileAllergenClose");
