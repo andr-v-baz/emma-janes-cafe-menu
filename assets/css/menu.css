@@ -1995,3 +1995,15 @@ body.modal-open {
 .product-modal-card {
     margin: 0;
 }
+/* =========================================================
+   Fix category bar under header on tablet/burger width
+========================================================= */
+
+
+
+@media (min-width: 701px) and (max-width: 801px) {
+    .menu-tabs-area {
+        top: 130px !important;
+        z-index: 900;
+    }
+}
