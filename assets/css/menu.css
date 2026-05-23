@@ -1006,7 +1006,7 @@ body.modal-open {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .header {
         position: sticky;
         top: 0;
@@ -1390,64 +1390,7 @@ body.modal-open {
         display: grid;
         gap: 12px;
     }
-/* 1. Sausage Roll */
-.menu-panel[data-category="savory"] .modern-menu-card:nth-child(1) .modern-menu-photo img {
-    object-position: 50% 60%;
-    transform: scale(1);
-}
-/* 2. Chicken Caesar Wrap */
-.menu-panel[data-category="savory"] .modern-menu-card:nth-child(2) .modern-menu-photo img {
-    object-position: 50% 50%;
-    transform: scale(1);
-}
 
-/* 3. Smoked Salmon Toast */
-.menu-panel[data-category="savory"] .modern-menu-card:nth-child(3) .modern-menu-photo img {
-    object-position: 50% 50%;
-    transform: scale(1);
-}
-
-/* 4. Grilled Cheese Toastie */
-.menu-panel[data-category="savory"] .modern-menu-card:nth-child(4) .modern-menu-photo img {
-    object-position: 50% 85%;
-    transform: scale(1);
-}
-
-/* 5. Ham & Cheese Toastie */
-.menu-panel[data-category="savory"] .modern-menu-card:nth-child(5) .modern-menu-photo img {
-    object-position: 50% 60%;
-    transform: scale(1);
-}
-
-/* 6. Garlic Chicken Toastie */
-.menu-panel[data-category="savory"] .modern-menu-card:nth-child(6) .modern-menu-photo img {
-    object-position: 60% 85%;
-    transform: scale(1);
-}
-
-/* 7. Roast Turkey Toastie */
-.menu-panel[data-category="savory"] .modern-menu-card:nth-child(7) .modern-menu-photo img {
-    object-position: 10% 80%;
-    transform: scale(1);
-}
-
-/* 8. BBQ Beef Toastie */
-.menu-panel[data-category="savory"] .modern-menu-card:nth-child(8) .modern-menu-photo img {
-    object-position: 50% 80%;
-    transform: scale(1);
-}
-
-/* 9. Goats Cheese Toastie */
-.menu-panel[data-category="savory"] .modern-menu-card:nth-child(9) .modern-menu-photo img {
-    object-position: 50% 50%;
-    transform: scale(1);
-}
-
-/* 10. Curried Chickpea Toastie */
-.menu-panel[data-category="savory"] .modern-menu-card:nth-child(10) .modern-menu-photo img {
-    object-position: 50% 70%;
-    transform: scale(1);
-}
     .mobile-allergen-list div {
         display: flex;
         align-items: center;
@@ -1501,125 +1444,7 @@ body.modal-open {
 
 /* =========================================================
    Sticky category tabs + desktop scroll arrows
-   Only this block was added/changed for category scrolling.
-========================================================= */
-
-/* Wrapper for tabs and arrows */
-.menu-tabs-area {
-    position: sticky;
-    top: 78px;
-    z-index: 950;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 46px;
-    padding: 12px 8%;
-    background: rgba(251, 246, 234, 0.96);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(216, 199, 168, 0.35);
-}
-
-/* Make category row sticky on every screen size */
-.menu-tabs {
-    position: sticky !important;
-    top: 78px;
-    z-index: 950;
-    flex: 1;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 14px;
-    margin: 0;
-    padding: 8px 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    background: transparent;
-    border-bottom: none;
-    scrollbar-width: none;
-}
-
-.menu-tabs::-webkit-scrollbar {
-    display: none;
-}
-
-/* Desktop arrows */
-.menu-scroll-btn {
-    width: 42px;
-    height: 42px;
-    flex: 0 0 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #d8c7a8;
-    border-radius: 50%;
-    background: #fffaf0;
-    color: #2e5e3d;
-    font-size: 26px;
-    font-weight: 800;
-    line-height: 1;
-    cursor: pointer;
-    box-shadow: 0 8px 18px rgba(46, 42, 34, 0.08);
-    transition: 0.25s ease;
-}
-
-.menu-scroll-btn:hover {
-    background: #2e5e3d;
-    color: #ffffff;
-    border-color: #2e5e3d;
-    transform: translateY(-1px);
-}
-
-/* Hide arrows on smaller screens, but keep categories sticky */
-@media (max-width: 900px) {
-    .menu-tabs-area {
-        top: 68px;
-        gap: 0;
-        padding: 10px 5%;
-        margin-bottom: 30px;
-    }
-
-    .menu-tabs {
-        position: sticky !important;
-        top: 68px;
-        justify-content: flex-start;
-        gap: 10px;
-        margin: 0;
-        padding: 8px 0 10px;
-    }
-
-    .menu-scroll-btn {
-        display: none;
-    }
-}
-
-@media (max-width: 700px) {
-    .menu-tabs-area {
-        top: 64px;
-        padding: 8px 2%;
-    }
-
-    .menu-tabs {
-        position: sticky !important;
-        top: 64px;
-    }
-}
-
-@media (max-width: 600px) {
-    .menu-tabs-area {
-        top: 64px;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
-    .menu-tabs {
-        position: sticky !important;
-        top: 64px;
-    }
-}
-/* =========================================================
-   Sticky category tabs + desktop scroll arrows
+   Final clean version
 ========================================================= */
 
 .menu-tabs-area {
@@ -1697,6 +1522,7 @@ body.modal-open {
     transform: translateY(-1px);
 }
 
+/* Smaller desktop */
 @media (max-width: 1200px) {
     .menu-tab {
         padding: 11px 18px;
@@ -1705,6 +1531,7 @@ body.modal-open {
     }
 }
 
+/* Tablet */
 @media (max-width: 900px) {
     .menu-tabs-area {
         top: 74px;
@@ -1730,7 +1557,8 @@ body.modal-open {
     }
 }
 
-@media (max-width: 700px) {
+/* Mobile */
+@media (max-width: 800px) {
     .menu-tabs-area {
         top: 66px;
         margin: 0 -2% 28px;
@@ -1743,6 +1571,7 @@ body.modal-open {
     }
 }
 
+/* Small mobile */
 @media (max-width: 600px) {
     .menu-tabs-area {
         position: sticky;
@@ -1754,4 +1583,415 @@ body.modal-open {
         position: relative !important;
         top: auto !important;
     }
- }
+}
+
+/* =========================================================
+   Savory photos — desktop settings
+========================================================= */
+
+/* 1. Sausage Roll */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(1) .modern-menu-photo img {
+    object-position: 50% 60%;
+    transform: scale(1);
+}
+
+/* 2. Chicken Caesar Wrap */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(2) .modern-menu-photo img {
+    object-position: 50% 50%;
+    transform: scale(1);
+}
+
+/* 3. Smoked Salmon Toast */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(3) .modern-menu-photo img {
+    object-position: 50% 50%;
+    transform: scale(1);
+}
+
+/* 4. Grilled Cheese Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(4) .modern-menu-photo img {
+    object-position: 50% 85%;
+    transform: scale(1);
+}
+
+/* 5. Ham & Cheese Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(5) .modern-menu-photo img {
+    object-position: 50% 60%;
+    transform: scale(1);
+}
+
+/* 6. Garlic Chicken Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(6) .modern-menu-photo img {
+    object-position: 60% 85%;
+    transform: scale(1);
+}
+
+/* 7. Roast Turkey Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(7) .modern-menu-photo img {
+    object-position: 10% 90%;
+    transform: scale(1);
+}
+
+/* 8. BBQ Beef Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(8) .modern-menu-photo img {
+    object-position: 50% 90%;
+    transform: scale(1);
+}
+
+/* 9. Goats Cheese Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(9) .modern-menu-photo img {
+    object-position: 50% 80%;
+    transform: scale(1);
+}
+
+/* 10. Curried Chickpea Toastie */
+.menu-panel[data-category="savory"] .modern-menu-card:nth-child(10) .modern-menu-photo img {
+    object-position: 50% 70%;
+    transform: scale(1);
+}
+
+/* =========================================================
+   Savory photos — tablet settings
+========================================================= */
+
+@media (max-width: 900px) {
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(1) .modern-menu-photo img {
+        object-position: 50% 58%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(2) .modern-menu-photo img {
+        object-position: 50% 50%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(3) .modern-menu-photo img {
+        object-position: 50% 50%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(4) .modern-menu-photo img {
+        object-position: 50% 82%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(5) .modern-menu-photo img {
+        object-position: 50% 58%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(6) .modern-menu-photo img {
+        object-position: 60% 82%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(7) .modern-menu-photo img {
+        object-position: 10% 78%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(8) .modern-menu-photo img {
+        object-position: 50% 78%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(9) .modern-menu-photo img {
+        object-position: 50% 78%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(10) .modern-menu-photo img {
+        object-position: 50% 68%;
+        transform: scale(1);
+    }
+}
+
+/* =========================================================
+   Savory photos — mobile settings
+========================================================= */
+
+@media (max-width: 600px) {
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(1) .modern-menu-photo img {
+        object-position: 50% 60%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(2) .modern-menu-photo img {
+        object-position: 50% 50%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(3) .modern-menu-photo img {
+        object-position: 50% 50%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(4) .modern-menu-photo img {
+        object-position: 50% 85%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(5) .modern-menu-photo img {
+        object-position: 50% 60%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(6) .modern-menu-photo img {
+        object-position: 60% 85%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(7) .modern-menu-photo img {
+        object-position: 10% 90%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(8) .modern-menu-photo img {
+        object-position: 50% 90%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(9) .modern-menu-photo img {
+        object-position: 50% 80%;
+        transform: scale(1);
+    }
+
+    .menu-panel[data-category="savory"] .modern-menu-card:nth-child(10) .modern-menu-photo img {
+        object-position: 50% 70%;
+        transform: scale(1);
+    }
+}
+/* =========================================================
+   Fix menu cards overlap on medium desktop only
+   Does not affect tablet or mobile.
+========================================================= */
+
+@media (min-width: 1101px) and (max-width: 1350px) {
+    .modern-menu-grid,
+    .scones-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .menu-content-layout {
+        grid-template-columns: minmax(0, 1fr) 300px;
+        gap: 24px;
+    }
+
+    .modern-menu-title-row h3 {
+        font-size: 25px;
+    }
+
+    .modern-menu-title-row strong {
+        font-size: 26px;
+    }
+
+    .featured-menu-tags {
+        position: static;
+        margin-top: 12px;
+        justify-content: flex-start;
+    }
+}
+/* =========================================================
+   Tablet: keep category row fixed at same height
+   and use allergen button like mobile
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 1100px) {
+    .menu-tabs-area {
+        position: sticky;
+        top: 100px;
+        z-index: 999;
+    }
+
+    .menu-tabs {
+        position: relative !important;
+        top: auto !important;
+    }
+
+    .allergen-key {
+        display: none;
+    }
+
+    .mobile-allergen-btn {
+        position: fixed;
+        right: 22px;
+        bottom: 22px;
+        z-index: 999;
+        display: block;
+        padding: 14px 22px;
+        border: none;
+        border-radius: 999px;
+        background: #2e5e3d;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 800;
+        box-shadow: 0 12px 28px rgba(46, 42, 34, 0.25);
+        cursor: pointer;
+    }
+
+    .mobile-allergen-btn.hidden {
+        display: none;
+    }
+
+    .mobile-allergen-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background: rgba(34, 30, 25, 0.35);
+        backdrop-filter: blur(6px);
+    }
+
+    .mobile-allergen-modal.hidden {
+        display: none;
+    }
+
+    .mobile-allergen-card {
+        width: min(620px, 100%);
+        max-height: 78vh;
+        overflow-y: auto;
+        padding: 30px 28px 34px;
+        border-radius: 28px 28px 0 0;
+        background: #fffaf0;
+        border: 1px solid #eadbc5;
+        box-shadow: 0 -18px 50px rgba(46, 42, 34, 0.22);
+        position: relative;
+    }
+
+    .mobile-allergen-close {
+        position: absolute;
+        top: 16px;
+        right: 18px;
+        width: 38px;
+        height: 38px;
+        border: none;
+        border-radius: 50%;
+        background: #f3ead6;
+        color: #2e5e3d;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .mobile-allergen-card h3 {
+        font-family: Georgia, serif;
+        font-size: 34px;
+        color: #2e5e3d;
+        margin-bottom: 12px;
+    }
+
+    .mobile-allergen-card p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #51483d;
+        margin-bottom: 20px;
+    }
+
+    .mobile-allergen-list {
+        display: grid;
+        gap: 12px;
+    }
+
+    .mobile-allergen-list div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 16px;
+        border-radius: 18px;
+        border: 1px solid #eadbc5;
+        background: #fbf6ea;
+        font-size: 16px;
+        font-weight: 700;
+        color: #51483d;
+    }
+
+    .mobile-allergen-list span {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #f3ead6;
+        color: #2e5e3d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+    }
+}
+/* =========================================================
+   Final burger fix from 800px
+========================================================= */
+
+@media (max-width: 800px) {
+    .navbar {
+        position: relative;
+        z-index: 1002;
+    }
+
+    .hamburger-btn {
+        display: block !important;
+        position: relative;
+        z-index: 1003;
+        border: none;
+        background: transparent;
+        color: #2e5e3d;
+        font-size: 30px;
+        font-weight: 800;
+        cursor: pointer;
+        line-height: 1;
+    }
+
+    .nav-links {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        right: 5%;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 22px;
+        background: #fbf6ea;
+        border: 1px solid #eadbc5;
+        border-radius: 0 0 24px 24px;
+        box-shadow: 0 18px 35px rgba(46, 42, 34, 0.16);
+        z-index: 1002;
+    }
+
+    .nav-links.show {
+        display: flex !important;
+    }
+}
+
+@media (min-width: 801px) {
+    .hamburger-btn {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+/* =========================================================
+   Product modal center fix
+========================================================= */
+
+.product-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.product-modal.hidden {
+    display: none !important;
+}
+
+.product-modal-card {
+    margin: 0;
+}

@@ -4,20 +4,20 @@
       "id": "pancakes",
       "title": "Pancakes",
       "subtitle": "Choose your pancakes",
-       "note": "Served Saturday and Sunday from 9:30 AM to 12:30 PM.",
+      "note": "Served Saturday and Sunday from 9:30 AM to 12:30 PM.",
       "items": [
         {
-  "name": "Kids Pancakes",
-  "description": "Smaller portion. Includes any 3 sauces or toppings.",
-  "price": "€7",
-  "image": "../assets/images/menu/pancakes/kids-pancakes.jpg"
-},
-{
-  "name": "Adults Pancakes",
-  "description": "Larger portion. Includes any 3 sauces or toppings.",
-  "price": "€10",
-  "image": "../assets/images/menu/pancakes/adult-pancakes.jpg"
-}
+          "name": "Kids Pancakes",
+          "description": "Smaller portion. Includes any 3 sauces or toppings.",
+          "price": "€7",
+          "image": "../assets/images/menu/pancakes/kids-pancakes.jpg"
+        },
+        {
+          "name": "Adults Pancakes",
+          "description": "Larger portion. Includes any 3 sauces or toppings.",
+          "price": "€10",
+          "image": "../assets/images/menu/pancakes/adult-pancakes.jpg"
+        }
       ],
       "extras": {
         "sauces": [
@@ -47,18 +47,22 @@
   "subtitle": "Toasties, wraps and fresh savoury bites",
   "items": [
     {
-  "name": "Sausage Roll",
-  "description": "Warm sausage roll with apple, black pudding and minced meat.",
-  "ingredients": "Apple, black pudding and minced meat.",
-  "price": "€5",
-  "image": "../assets/images/menu/savory/sausage-roll.jpg"
-},
+      "name": "Sausage Roll",
+      "description": "Warm sausage roll with apple, black pudding and minced meat.",
+      "ingredients": "Apple, black pudding and minced meat.",
+      "price": "€5",
+      "image": "../assets/images/menu/savory/sausage-roll.jpg",
+      "modalPosition": "50% 60%",
+      "modalScale": "1"
+    },
     {
       "name": "Chicken Caesar Wrap",
-      "description": "Chicken Caesar salad in a soft tortilla wrap.",
-      "ingredients": "Chicken, Caesar salad, tortilla wrap.",
+      "description": "Chicken Caesar salad with bacon in a soft tortilla wrap.",
+      "ingredients": "Chicken, Caesar salad, bacon and tortilla wrap.",
       "price": "€8",
-      "image": "../assets/images/menu/savory/chicken-caesar-wrap.jpg"
+      "image": "../assets/images/menu/savory/chicken-caesar-wrap.jpg",
+      "modalPosition": "50% 50%",
+      "modalScale": "1"
     },
     {
       "name": "Smoked Salmon Toast",
@@ -66,49 +70,63 @@
       "ingredients": "Smoked salmon, oat bread, Marie Rose sauce.",
       "price": "€8.50",
       "badge": "GF",
-      "image": "../assets/images/menu/savory/smoked-salmon-toast.jpg"
+      "image": "../assets/images/menu/savory/smoked-salmon-toast.jpg",
+      "modalPosition": "50% 50%",
+      "modalScale": "1"
     },
     {
       "name": "Grilled Cheese Toastie",
       "description": "Warm toastie with a rich four cheese blend.",
       "ingredients": "Four cheese blend.",
       "price": "€6.50",
-      "image": "../assets/images/menu/savory/grilled-cheese-toastie.jpg"
+      "image": "../assets/images/menu/savory/grilled-cheese-toastie.jpg",
+      "modalPosition": "50% 85%",
+      "modalScale": "1"
     },
     {
       "name": "Ham & Cheese Toastie",
       "description": "Classic honey baked ham and cheese toastie.",
       "ingredients": "Honey baked ham and cheese.",
       "price": "€8",
-      "image": "../assets/images/menu/savory/ham-cheese-toastie.jpg"
+      "image": "../assets/images/menu/savory/ham-cheese-toastie.jpg",
+      "modalPosition": "50% 60%",
+      "modalScale": "1"
     },
     {
       "name": "Garlic Chicken Toastie",
       "description": "Garlic chicken toastie with pesto, peppers and melted cheese.",
       "ingredients": "Garlic chicken, pesto, peppers and cheese.",
       "price": "€8",
-      "image": "../assets/images/menu/savory/garlic-chicken-toastie.jpg"
+      "image": "../assets/images/menu/savory/garlic-chicken-toastie.jpg",
+      "modalPosition": "60% 85%",
+      "modalScale": "1"
     },
     {
       "name": "Roast Turkey Toastie",
       "description": "Roast turkey toastie with stuffing, cranberry sauce and cheese.",
       "ingredients": "Roast turkey, stuffing, cranberry sauce and cheese.",
       "price": "€8",
-      "image": "../assets/images/menu/savory/roast-turkey-toastie.jpg"
+      "image": "../assets/images/menu/savory/roast-turkey-toastie.jpg",
+      "modalPosition": "10% 90%",
+      "modalScale": "1"
     },
     {
       "name": "BBQ Beef Toastie",
       "description": "BBQ beef toastie with onions, peppers and cheese.",
       "ingredients": "BBQ beef, onions, peppers and cheese.",
       "price": "€8",
-      "image": "../assets/images/menu/savory/bbq-beef-toastie.jpg"
+      "image": "../assets/images/menu/savory/bbq-beef-toastie.jpg",
+      "modalPosition": "50% 90%",
+      "modalScale": "1"
     },
     {
       "name": "Goats Cheese Toastie",
       "description": "Goats cheese toastie with spinach, peppers, pesto and tomato relish.",
       "ingredients": "Goats cheese, spinach, peppers, pesto and tomato relish.",
       "price": "€8",
-      "image": "../assets/images/menu/savory/goats-cheese-toastie.jpg"
+      "image": "../assets/images/menu/savory/goats-cheese-toastie.jpg",
+      "modalPosition": "50% 80%",
+      "modalScale": "1"
     },
     {
       "name": "Curried Chickpea Toastie",
@@ -116,7 +134,9 @@
       "ingredients": "Curried chickpea, mango chutney, spinach, peppers and vegan cheese.",
       "price": "€8",
       "badge": "VG",
-      "image": "../assets/images/menu/savory/curried-chickpea-toastie.jpg"
+      "image": "../assets/images/menu/savory/curried-chickpea-toastie.jpg",
+      "modalPosition": "50% 70%",
+      "modalScale": "1"
     }
   ]
 },
@@ -148,11 +168,11 @@
         },
         {
           "name": "Mocha",
-          "price": "€4.50"
+          "price": "€4.40"
         },
         {
           "name": "Dirty Chai",
-          "price": "€4.50"
+          "price": "€4.40"
         },
         {
           "name": "Dark Hot Chocolate",
@@ -228,397 +248,357 @@
         }
       ]
     },
-   {
-  "id": "soft-drinks",
-  "title": "Soft Drinks",
-  "subtitle": "Cans, water, juice and refreshing bottled drinks",
-  "items": [
     {
-      "name": "Coca-Cola",
-      "price": "€2.20"
+      "id": "soft-drinks",
+      "title": "Soft Drinks",
+      "subtitle": "Cans, water, juice and refreshing bottled drinks",
+      "items": [
+        {
+          "name": "Coca-Cola",
+          "price": "€2.20"
+        },
+        {
+          "name": "Coca-Cola Zero",
+          "price": "€2.20"
+        },
+        {
+          "name": "Diet Coke",
+          "price": "€2.20"
+        },
+        {
+          "name": "7UP",
+          "price": "€2.20"
+        },
+        {
+          "name": "Sanpellegrino Lemon",
+          "price": "€2.50"
+        },
+        {
+          "name": "Sanpellegrino Orange & Pomegranate",
+          "price": "€2.50"
+        },
+        {
+          "name": "Vit Hit",
+          "price": "€3"
+        },
+        {
+          "name": "Still Water",
+          "price": "€2"
+        },
+        {
+          "name": "Sparkling Water",
+          "price": "€2"
+        },
+        {
+          "name": "Ribena",
+          "price": "€2"
+        },
+        {
+          "name": "Apple Juice",
+          "price": "€2"
+        },
+        {
+          "name": "Orange Juice",
+          "price": "€2"
+        }
+      ]
     },
     {
-      "name": "Coca-Cola Zero",
-      "price": "€2.20"
+      "id": "ice-cream",
+      "title": "Ice Cream",
+      "subtitle": "Morelli ice cream tubs",
+      "image": "../assets/images/menu/ice-cream/morelli-ice-cream.jpg",
+      "items": [
+        {
+          "name": "Strawberry",
+          "price": "€3"
+        },
+        {
+          "name": "Chocolate",
+          "price": "€3"
+        },
+        {
+          "name": "Honeycomb",
+          "price": "€3"
+        },
+        {
+          "name": "Mint & Belgian Chocolate Chip",
+          "price": "€3"
+        },
+        {
+          "name": "Cookies & Cream",
+          "price": "€3"
+        },
+        {
+          "name": "Sea Salted Caramel",
+          "price": "€3"
+        },
+        {
+          "name": "Double Cream Vanilla",
+          "price": "€3"
+        }
+      ]
     },
     {
-      "name": "Diet Coke",
-      "price": "€2.20"
+      "id": "cakes",
+      "title": "Cakes",
+      "subtitle": "Homemade cakes and sweet treats",
+      "items": [
+        {
+          "name": "Chocolate Cake",
+          "price": "€4.50",
+          "image": "../assets/images/menu/cakes/chocolate-cake.jpg"
+        },
+        {
+          "name": "Carrot Cake",
+          "price": "€4.50",
+          "image": "../assets/images/menu/cakes/carrot-cake.jpg"
+        },
+        {
+          "name": "Cheesecake",
+          "price": "€4.50",
+          "image": "../assets/images/menu/cakes/cheesecake.jpg"
+        },
+        {
+          "name": "Biscuit Cake",
+          "price": "€3.50",
+          "image": "../assets/images/menu/cakes/biscuit-cake.jpg"
+        },
+        {
+          "name": "Brownies",
+          "price": "€4.50",
+          "image": "../assets/images/menu/cakes/brownies.jpg"
+        },
+        {
+          "name": "Apple Tart",
+          "price": "€3.50",
+          "image": "../assets/images/menu/cakes/apple-tart.jpg"
+        },
+        {
+          "name": "Cinnabon",
+          "price": "€4.00",
+          "image": "../assets/images/menu/cakes/cinnabon.jpg"
+        },
+        {
+          "name": "Berry Muffin",
+          "price": "€3.50",
+          "image": "../assets/images/menu/cakes/berry-muffin.jpg"
+        },
+        {
+          "name": "Small Cupcake",
+          "price": "€2.50",
+          "image": "../assets/images/menu/cakes/small-cupcake.jpg"
+        },
+        {
+          "name": "Banana Bread",
+          "price": "€3.50",
+          "image": "../assets/images/menu/cakes/banana-bread.jpg"
+        },
+        {
+          "name": "Chocolate Chip Cookies",
+          "price": "€2.80",
+          "image": "../assets/images/menu/cakes/chocolate-chip-cookies.jpg"
+        },
+        {
+          "name": "Nutella Stuffed Cookie",
+          "price": "€4.00",
+          "image": "../assets/images/menu/cakes/nutella-stuffed-cookie.jpg"
+        },
+        {
+          "name": "Pistachio Stuffed Cookie",
+          "price": "€4.00",
+          "image": "../assets/images/menu/cakes/pistachio-stuffed-cookie.jpg"
+        },
+        {
+          "name": "Biscoff Stuffed Cookie",
+          "price": "€4.00",
+          "image": "../assets/images/menu/cakes/biscoff-stuffed-cookie.jpg"
+        },
+        {
+          "name": "Gingerbread Men",
+          "price": "€2.50",
+          "image": "../assets/images/menu/cakes/gingerbread-men.jpg"
+        },
+        {
+          "name": "Vegan Oat, Pistachio and Cranberry Cookie",
+          "price": "€2.80",
+          "badge": "VG",
+          "image": "../assets/images/menu/cakes/vegan-oat-pistachio-cranberry-cookie.jpg"
+        },
+        {
+          "name": "Peanut Butter Slice with Dark Chocolate",
+          "price": "€4.00",
+          "badge": "VG",
+          "image": "../assets/images/menu/cakes/peanut-butter-dark-chocolate-slice.jpg"
+        },
+        {
+          "name": "Lemon Drizzle",
+          "price": "€3.50",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/lemon-drizzle.jpg"
+        },
+        {
+          "name": "Flapjacks",
+          "price": "€3.50",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/flapjacks.jpg"
+        },
+        {
+          "name": "Caramel Squares",
+          "price": "€3.50",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/caramel-squares.jpg"
+        },
+        {
+          "name": "Coconut Macaroons",
+          "price": "€2.80",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/macaroons.jpg"
+        },
+        {
+          "name": "Granola Pots",
+          "price": "€4.50",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/granola-pots.jpg"
+        },
+        {
+          "name": "Doddie Biscuits",
+          "price": "4 for €1",
+          "image": "../assets/images/menu/cakes/doddie-biscuits.jpg"
+        },
+        {
+          "name": "Jellies",
+          "price": "4 for €1",
+          "image": "../assets/images/menu/cakes/jellies.jpg"
+        },
+        {
+          "name": "Pistachio & White Chocolate Protein Balls",
+          "description": "Date and nut based. €2.80 each or 2 for €5.",
+          "price": "€2.80",
+          "image": "../assets/images/menu/cakes/pistachio-white-chocolate-protein-balls.jpg"
+        },
+        {
+          "name": "Pecan Toffee Protein Balls",
+          "description": "Date and nut based. €2.80 each or 2 for €5.",
+          "price": "€2.80",
+          "image": "../assets/images/menu/cakes/pecan-toffee-protein-balls.jpg"
+        }
+      ]
     },
     {
-      "name": "7UP",
-      "price": "€2.20"
+      "id": "gluten-free",
+      "title": "Gluten Free",
+      "subtitle": "Gluten free cakes and sweet treats",
+      "items": [
+        {
+          "name": "Lemon Drizzle",
+          "price": "€3.50",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/lemon-drizzle.jpg"
+        },
+        {
+          "name": "Flapjacks",
+          "price": "€3.50",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/flapjacks.jpg"
+        },
+        {
+          "name": "Caramel Squares",
+          "price": "€3.50",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/caramel-squares.jpg"
+        },
+        {
+          "name": "Coconut Macaroons",
+          "price": "€2.80",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/macaroons.jpg"
+        },
+        {
+          "name": "Pistachio & White Chocolate Protein Balls",
+          "description": "Date and nut based. €2.80 each or 2 for €5.",
+          "price": "€2.80",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/pistachio-white-chocolate-protein-balls.jpg"
+        },
+        {
+          "name": "Pecan Toffee Protein Balls",
+          "description": "Date and nut based. €2.80 each or 2 for €5.",
+          "price": "€2.80",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/pecan-toffee-protein-balls.jpg"
+        },
+        {
+          "name": "Granola Pots",
+          "price": "€4.50",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/granola-pots.jpg"
+        },
+        {
+          "name": "Oat Banana Blueberry Scone",
+          "description": "Jam and butter included.",
+          "price": "€3",
+          "badge": "GF",
+          "image": "../assets/images/menu/scones/gluten-free-oat-banana-blueberry-scone.jpg"
+        }
+      ]
     },
     {
-      "name": "Sanpellegrino Lemon",
-      "price": "€2.50"
+      "id": "vegan",
+      "title": "Vegan",
+      "subtitle": "Vegan cookies and slices",
+      "items": [
+        {
+          "name": "Vegan Oat, Pistachio and Cranberry Cookie",
+          "price": "€2.80",
+          "badge": "VG",
+          "image": "../assets/images/menu/cakes/vegan-oat-pistachio-cranberry-cookie.jpg"
+        },
+        {
+          "name": "Peanut Butter Slice with Dark Chocolate",
+          "price": "€4.00",
+          "badge": "VG",
+          "image": "../assets/images/menu/cakes/peanut-butter-dark-chocolate-slice.jpg"
+        }
+      ]
     },
     {
-      "name": "Sanpellegrino Orange & Pomegranate",
-      "price": "€2.50"
-    },
-    {
-      "name": "Vit Hit",
-      "price": "€3"
-    },
-    {
-      "name": "Still Water",
-      "price": "€2"
-    },
-    {
-      "name": "Sparkling Water",
-      "price": "€2"
-    },
-    {
-      "name": "Ribena",
-      "price": "€2"
-    },
-    {
-      "name": "Apple Juice",
-      "price": "€2"
-    },
-    {
-      "name": "Orange Juice",
-      "price": "€2"
+      "id": "scones",
+      "title": "Scones",
+      "subtitle": "Fresh scones with jam and butter",
+      "items": [
+        {
+          "name": "Raisin",
+          "description": "Jam and butter included.",
+          "price": "€3",
+          "image": "../assets/images/menu/scones/raisin-scone.jpg"
+        },
+        {
+          "name": "Pear Cinnamon Walnut",
+          "description": "Jam and butter included.",
+          "price": "€3",
+          "image": "../assets/images/menu/scones/pear-cinnamon-walnut-scone.jpg"
+        },
+        {
+          "name": "Blueberry",
+          "description": "Jam and butter included.",
+          "price": "€3",
+          "image": "../assets/images/menu/scones/blueberry-scone.jpg"
+        },
+        {
+          "name": "Raspberry & White Chocolate",
+          "description": "Jam and butter included.",
+          "price": "€3",
+          "image": "../assets/images/menu/scones/raspberry-white-chocolate-scone.jpg"
+        },
+        {
+          "name": "Oat Banana and Blueberry",
+          "description": "Jam and butter included.",
+          "price": "€3",
+          "badge": "GF",
+          "image": "../assets/images/menu/scones/gluten-free-oat-banana-blueberry-scone.jpg"
+        }
+      ]
     }
-  ]
-},
-{
-  "id": "ice-cream",
-  "title": "Ice Cream",
-  "subtitle": "Morelli ice cream tubs",
-  "image": "../assets/images/menu/ice-cream/morelli-ice-cream.jpg",
-  "items": [
-    {
-      "name": "Strawberry",
-      "description": "Morelli strawberry ice cream tub.",
-      "price": "€3"
-    },
-    {
-      "name": "Chocolate",
-      "description": "Morelli chocolate ice cream tub.",
-      "price": "€3"
-    },
-    {
-      "name": "Honeycomb",
-      "description": "Morelli honeycomb ice cream tub.",
-      "price": "€3"
-    },
-    {
-      "name": "Mint & Belgian Chocolate Chip",
-      "description": "Morelli mint ice cream with Belgian chocolate chips.",
-      "price": "€3"
-    },
-    {
-      "name": "Cookies & Cream",
-      "description": "Morelli cookies and cream ice cream tub.",
-      "price": "€3"
-    },
-    {
-      "name": "Sea Salted Caramel",
-      "description": "Morelli sea salted caramel ice cream tub.",
-      "price": "€3"
-    },
-    {
-      "name": "Double Cream Vanilla",
-      "description": "Morelli double cream vanilla ice cream tub.",
-      "price": "€3"
-    }
-  ]
-},
-    {
-  
-  "id": "cakes",
-  "title": "Cakes",
-  "subtitle": "Homemade cakes and sweet treats",
-  "items": [
-    {
-      "name": "Chocolate Cake",
-      "description": "Rich chocolate cake slice.",
-      "price": "€4.50",
-      "image": "../assets/images/menu/cakes/chocolate-cake.jpg"
-    },
-    {
-      "name": "Carrot Cake",
-      "description": "Soft carrot cake slice.",
-      "price": "€4.50",
-      "image": "../assets/images/menu/cakes/carrot-cake.jpg"
-    },
-    {
-      "name": "Cheesecake",
-      "description": "Creamy cheesecake slice.",
-      "price": "€4.50",
-      "image": "../assets/images/menu/cakes/cheesecake.jpg"
-    },
-    {
-      "name": "Biscuit Cake",
-      "description": "Sweet biscuit cake slice.",
-      "price": "€3.50",
-      "image": "../assets/images/menu/cakes/biscuit-cake.jpg"
-    },
-    {
-      "name": "Brownies",
-      "description": "Rich chocolate brownies.",
-      "price": "€4.50",
-      "image": "../assets/images/menu/cakes/brownies.jpg"
-    },
-    {
-      "name": "Apple Tart",
-      "description": "Classic apple tart.",
-      "price": "€3.50",
-      "image": "../assets/images/menu/cakes/apple-tart.jpg"
-    },
-    {
-      "name": "Cinnabon",
-      "description": "Soft cinnamon bun with sweet icing.",
-      "price": "€4.00",
-      "image": "../assets/images/menu/cakes/cinnabon.jpg"
-    },
-    {
-      "name": "Berry Muffin",
-      "description": "Muffin with blueberry, raspberry and white chocolate.",
-      "price": "€3.50",
-      "image": "../assets/images/menu/cakes/berry-muffin.jpg"
-    },
-    {
-      "name": "Small Cupcake",
-      "description": "Small chocolate cupcake with colourful sprinkles.",
-      "price": "€2.50",
-      "image": "../assets/images/menu/cakes/small-cupcake.jpg"
-    },
-    {
-      "name": "Banana Bread",
-      "description": "Soft banana bread slice with chocolate chips.",
-      "price": "€3.50",
-      "image": "../assets/images/menu/cakes/banana-bread.jpg"
-    },
-    {
-      "name": "Chocolate Chip Cookies",
-      "description": "Fresh cookies with chocolate chips.",
-      "price": "€2.80",
-      "image": "../assets/images/menu/cakes/chocolate-chip-cookies.jpg"
-    },
-    {
-      "name": "Nutella Stuffed Cookie",
-      "description": "Soft cookie filled with Nutella.",
-      "price": "€4.00",
-      "image": "../assets/images/menu/cakes/nutella-stuffed-cookie.jpg"
-    },
-    {
-      "name": "Pistachio Stuffed Cookie",
-      "description": "Soft cookie filled with pistachio cream.",
-      "price": "€4.00",
-      "image": "../assets/images/menu/cakes/pistachio-stuffed-cookie.jpg"
-    },
-    {
-      "name": "Biscoff Stuffed Cookie",
-      "description": "Soft cookie filled with Biscoff spread.",
-      "price": "€4.00",
-      "image": "../assets/images/menu/cakes/biscoff-stuffed-cookie.jpg"
-    },
-    {
-      "name": "Gingerbread Men",
-      "description": "Small gingerbread treat for kids.",
-      "price": "€2.50",
-      "image": "../assets/images/menu/cakes/gingerbread-men.jpg"
-    },
-    {
-      "name": "Vegan Oat, Pistachio and Cranberry Cookie",
-      "description": "Vegan cookie with oat, pistachio and cranberry.",
-      "price": "€2.80",
-      "badge": "VG",
-      "image": "../assets/images/menu/cakes/vegan-oat-pistachio-cranberry-cookie.jpg"
-    },
-    {
-      "name": "Peanut Butter Slice with Dark Chocolate",
-      "description": "Vegan peanut butter slice with dark chocolate.",
-      "price": "€4.00",
-      "badge": "VG",
-      "image": "../assets/images/menu/cakes/peanut-butter-dark-chocolate-slice.jpg"
-    },
-    {
-      "name": "Lemon Drizzle",
-      "description": "Gluten free lemon cake with icing.",
-      "price": "€3.50",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/lemon-drizzle.jpg"
-    },
-    {
-      "name": "Flapjacks",
-      "description": "Gluten free sweet oat-based treat.",
-      "price": "€3.50",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/flapjacks.jpg"
-    },
-    {
-      "name": "Caramel Squares",
-      "description": "Gluten free caramel sweet treat.",
-      "price": "€3.50",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/caramel-squares.jpg"
-    },
-    {
-      "name": "Coconut Macaroons",
-      "description": "Gluten free sweet coconut-style treat.",
-      "price": "€2.80",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/macaroons.jpg"
-    },
-    {
-      "name": "Granola Pots",
-      "description": "Gluten free granola pot with fruit and yogurt.",
-      "price": "€4.50",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/granola-pots.jpg"
-    },
-    {
-      "name": "Doddie Biscuits",
-      "description": "Small sweet biscuits. 4 for €1.",
-      "price": "4 for €1",
-      "image": "../assets/images/menu/cakes/doddie-biscuits.jpg"
-    },
-    {
-      "name": "Jellies",
-      "description": "Small jellies. 4 for €1.",
-      "price": "4 for €1",
-      "image": "../assets/images/menu/cakes/jellies.jpg"
-    },
-    {
-      "name": "Pistachio & White Chocolate Protein Balls",
-      "description": "Protein balls with pistachio and white chocolate. €2.80 each or 2 for €5.",
-      "price": "€2.80",
-      "image": "../assets/images/menu/cakes/pistachio-white-chocolate-protein-balls.jpg"
-    },
-    {
-      "name": "Pecan Toffee Protein Balls",
-      "description": "Protein balls with pecan and toffee. €2.80 each or 2 for €5.",
-      "price": "€2.80",
-      "image": "../assets/images/menu/cakes/pecan-toffee-protein-balls.jpg"
-    }
-  ]
-},
-    {
-  "id": "gluten-free",
-  "title": "Gluten Free",
-  "subtitle": "Gluten free cakes and sweet treats",
-  "items": [
-    {
-      "name": "Lemon Drizzle",
-      "description": "Gluten free lemon cake with icing.",
-      "price": "€3.50",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/lemon-drizzle.jpg"
-    },
-    {
-      "name": "Flapjacks",
-      "description": "Sweet oat-based treat.",
-      "price": "€3.50",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/flapjacks.jpg"
-    },
-    {
-      "name": "Caramel Squares",
-      "description": "Gluten free caramel sweet treat.",
-      "price": "€3.50",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/caramel-squares.jpg"
-    },
-    {
-      "name": "Coconut Macaroons",
-      "description": "Sweet coconut-style treat.",
-      "price": "€2.80",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/macaroons.jpg"
-    },
-    {
-      "name": "Pistachio & White Chocolate Protein Balls",
-      "description": "Protein balls with pistachio and white chocolate. €2.80 each or 2 for €5.",
-      "price": "€2.80",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/pistachio-white-chocolate-protein-balls.jpg"
-    },
-    {
-      "name": "Pecan Toffee Protein Balls",
-      "description": "Protein balls with pecan and toffee. €2.80 each or 2 for €5.",
-      "price": "€2.80",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/pecan-toffee-protein-balls.jpg"
-    },
-    {
-      "name": "Granola Pots",
-      "description": "Granola pot with fruit and yogurt.",
-      "price": "€4.50",
-      "badge": "GF",
-      "image": "../assets/images/menu/cakes/granola-pots.jpg"
-    },
-    {
-      "name": "Oat Banana Blueberry Scone",
-      "description": "Gluten free oat, banana and blueberry scone. Jam and butter included.",
-      "price": "€3",
-      "badge": "GF",
-      "image": "../assets/images/menu/scones/gluten-free-oat-banana-blueberry-scone.jpg"
-      
-    }
-  ]
-},
-{
-  "id": "vegan",
-  "title": "Vegan",
-  "subtitle": "Vegan cookies and slices",
-  "items": [
-    {
-      "name": "Vegan Oat, Pistachio and Cranberry Cookie",
-      "description": "Vegan cookie with oat, pistachio and cranberry.",
-      "price": "€2.80",
-      "badge": "VG",
-      "image": "../assets/images/menu/cakes/vegan-oat-pistachio-cranberry-cookie.jpg"
-    },
-    {
-      "name": "Peanut Butter Slice with Dark Chocolate",
-      "description": "Vegan peanut butter slice with dark chocolate.",
-      "price": "€4.00",
-      "badge": "VG",
-      "image": "../assets/images/menu/cakes/peanut-butter-dark-chocolate-slice.jpg"
-    }
-  ]
-},
-    {
-  "id": "scones",
-  "title": "Scones",
-  "subtitle": "Fresh scones with jam and butter",
-  "items": [
-    {
-      "name": "Raisin",
-      "description": "Classic raisin scone. Jam and butter included.",
-      "price": "€3",
-      "image": "../assets/images/menu/scones/raisin-scone.jpg"
-    },
-    {
-      "name": "Pear Cinnamon Walnut",
-      "description": "Pear, cinnamon and walnut scone. Jam and butter included.",
-      "price": "€3",
-      "image": "../assets/images/menu/scones/pear-cinnamon-walnut-scone.jpg"
-    },
-    {
-      "name": "Blueberry",
-      "description": "Fresh blueberry scone. Jam and butter included.",
-      "price": "€3",
-      "image": "../assets/images/menu/scones/blueberry-scone.jpg"
-    },
-    {
-      "name": "Raspberry & White Chocolate",
-      "description": "Raspberry and white chocolate scone. Jam and butter included.",
-      "price": "€3",
-      "image": "../assets/images/menu/scones/raspberry-white-chocolate-scone.jpg"
-    },
-    {
-      "name": "Oat Banana and Blueberry",
-      "description": "Gluten free oat, banana and blueberry scone. Jam and butter included.",
-      "price": "€3",
-      "badge": "GF",
-        "image": "../assets/images/menu/scones/gluten-free-oat-banana-blueberry-scone.jpg"
-      }
-  ]
-}
   ]
 }

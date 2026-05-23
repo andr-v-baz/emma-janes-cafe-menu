@@ -2,14 +2,23 @@ const hamburgerBtn = document.getElementById("hamburgerBtn");
 const navMenu = document.getElementById("navMenu");
 
 if (hamburgerBtn && navMenu) {
-    hamburgerBtn.addEventListener("click", function () {
+    hamburgerBtn.addEventListener("click", function (event) {
+        event.stopPropagation();
         navMenu.classList.toggle("show");
+    });
+
+    navMenu.addEventListener("click", function (event) {
+        event.stopPropagation();
     });
 
     navMenu.querySelectorAll("a").forEach(function (link) {
         link.addEventListener("click", function () {
             navMenu.classList.remove("show");
         });
+    });
+
+    document.addEventListener("click", function () {
+        navMenu.classList.remove("show");
     });
 }
 

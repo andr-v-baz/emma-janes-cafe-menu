@@ -1390,3 +1390,404 @@
         word-break: break-word;
     }
 }
+/* =========================================================
+   Mobile fix: About scrapbook photos inside screen
+========================================================= */
+
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .intro {
+        overflow: hidden;
+    }
+
+    .scrapbook-gallery {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: 560px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .photo-left {
+        left: 3%;
+        top: 80px;
+        width: 46%;
+        height: 280px;
+        transform: rotate(-5deg);
+        z-index: 4;
+    }
+
+    .photo-right {
+        right: 3%;
+        top: 145px;
+        width: 58%;
+        height: 390px;
+        transform: rotate(5deg);
+        z-index: 2;
+    }
+
+    .scrapbook-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+/* =========================================================
+   Tablet fix: center intro text and move scrapbook photos down
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .intro {
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        padding-top: 20px;
+    }
+
+    .intro-text {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .intro-text h2,
+    .intro-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .story-button-wrap {
+        justify-content: center;
+        padding-bottom: 110px;
+    }
+
+    .button-vine {
+        left: 50%;
+        top: 58px;
+        width: 620px;
+        transform: translateX(-50%) rotate(-2deg);
+    }
+
+    .scrapbook-gallery {
+        margin: 65px auto 0;
+        justify-self: center;
+        max-width: 720px;
+        height: 560px;
+    }
+
+    .photo-left {
+        left: 6%;
+        top: 120px;
+        width: 42%;
+        height: 310px;
+    }
+
+    .photo-right {
+        right: 6%;
+        top: 175px;
+        width: 56%;
+        height: 430px;
+    }
+}
+@media (max-width: 1100px) {
+    .button-vine {
+        width: 560px;
+        left: -25px;
+        top: 52px;
+    }
+
+    .story-button-wrap {
+        padding-bottom: 95px;
+    }
+}
+
+@media (max-width: 900px) {
+    .button-vine {
+        width: 500px;
+        left: 50%;
+        top: 60px;
+        transform: translateX(-50%) rotate(-2deg);
+    }
+
+    .story-button-wrap {
+        padding-bottom: 105px;
+    }
+}
+
+@media (max-width: 700px) {
+    .button-vine {
+        width: 430px;
+        left: 50%;
+        top: 62px;
+        transform: translateX(-50%) rotate(-2deg);
+    }
+
+    .story-button-wrap {
+        padding-bottom: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-vine {
+        width: 360px;
+        left: 50%;
+        top: 66px;
+        transform: translateX(-50%) rotate(-2deg);
+    }
+
+    .story-button-wrap {
+        padding-bottom: 78px;
+    }
+}
+/* =========================================================
+   Final responsive intro layout
+   No conflicts between desktop, small desktop, tablet and mobile
+========================================================= */
+
+/* 1200px - 1350px: photos stay on the right */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .intro {
+        grid-template-columns: 0.95fr 1.05fr;
+        gap: 30px;
+        overflow: hidden;
+    }
+
+    .intro-text {
+        max-width: 560px;
+        z-index: 5;
+    }
+
+    .intro-text h2 {
+        font-size: 60px;
+        line-height: 1.05;
+    }
+
+    .intro-text > p:not(.section-label) {
+        max-width: 540px;
+    }
+
+    .story-button-wrap {
+        flex-wrap: nowrap;
+        gap: 16px;
+        padding-bottom: 95px;
+    }
+
+    .story-button-wrap .btn {
+        min-width: 180px;
+        white-space: nowrap;
+    }
+
+    .button-vine {
+        width: 520px;
+        left: -20px;
+        top: 58px;
+        transform: rotate(-2deg);
+    }
+
+    .scrapbook-gallery {
+        max-width: 620px;
+        height: 500px;
+        justify-self: end;
+        overflow: visible;
+    }
+
+    .photo-left {
+        left: 10px;
+        top: 120px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .photo-right {
+        right: -15px;
+        top: 45px;
+        width: 360px;
+        height: 435px;
+    }
+}
+
+/* 901px - 1199px: photos move under text */
+@media (min-width: 901px) and (max-width: 1199px) {
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    .intro-text {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 5;
+    }
+
+    .intro-text h2 {
+        font-size: 58px;
+        line-height: 1.05;
+    }
+
+    .intro-text > p:not(.section-label) {
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .story-button-wrap {
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 16px;
+        padding-bottom: 100px;
+    }
+
+    .story-button-wrap .btn {
+        min-width: 180px;
+        white-space: nowrap;
+    }
+
+    .button-vine {
+        width: 560px;
+        left: 50%;
+        top: 60px;
+        transform: translateX(-50%) rotate(-2deg);
+    }
+
+    .scrapbook-gallery {
+        max-width: 760px;
+        width: 100%;
+        height: 560px;
+        margin: 40px auto 0;
+        justify-self: center;
+        overflow: hidden;
+    }
+
+    .photo-left {
+        left: 6%;
+        top: 90px;
+        width: 42%;
+        height: 320px;
+    }
+
+    .photo-right {
+        right: 6%;
+        top: 150px;
+        width: 56%;
+        height: 410px;
+    }
+}
+
+/* 601px - 900px: tablet layout */
+@media (min-width: 601px) and (max-width: 900px) {
+    .intro {
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        padding-top: 20px;
+    }
+
+    .intro-text {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .intro-text h2,
+    .intro-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .story-button-wrap {
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding-bottom: 110px;
+    }
+
+    .story-button-wrap .btn {
+        min-width: 180px;
+        white-space: nowrap;
+    }
+
+    .button-vine {
+        left: 50%;
+        top: 58px;
+        width: 500px;
+        transform: translateX(-50%) rotate(-2deg);
+    }
+
+    .scrapbook-gallery {
+        margin: 65px auto 0;
+        justify-self: center;
+        max-width: 720px;
+        height: 560px;
+        overflow: hidden;
+    }
+
+    .photo-left {
+        left: 6%;
+        top: 120px;
+        width: 42%;
+        height: 310px;
+    }
+
+    .photo-right {
+        right: 6%;
+        top: 175px;
+        width: 56%;
+        height: 430px;
+    }
+}
+
+/* Up to 600px: mobile layout */
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .intro {
+        display: block;
+        overflow: hidden;
+    }
+
+    .story-button-wrap {
+        flex-wrap: nowrap;
+        padding-bottom: 95px;
+    }
+
+    .button-vine {
+        width: 360px;
+        left: 50%;
+        top: 66px;
+        transform: translateX(-50%) rotate(-2deg);
+    }
+
+    .scrapbook-gallery {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: 560px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .photo-left {
+        left: 3%;
+        top: 80px;
+        width: 46%;
+        height: 280px;
+        transform: rotate(-5deg);
+        z-index: 4;
+    }
+
+    .photo-right {
+        right: 3%;
+        top: 145px;
+        width: 58%;
+        height: 390px;
+        transform: rotate(5deg);
+        z-index: 2;
+    }
+}

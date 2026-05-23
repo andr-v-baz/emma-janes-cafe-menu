@@ -254,16 +254,24 @@ function hasDrinkSubtabs(categoryId) {
         modalDescription.textContent = item.ingredients || item.description || "";
         modalPrice.textContent = item.price;
 
-        if (modalImage) {
-            if (item.image) {
-                modalImage.classList.remove("placeholder-image");
-                modalImage.innerHTML = `<img src="${item.image}" alt="${item.name}">`;
-            } else {
-                modalImage.classList.add("placeholder-image");
-                modalImage.innerHTML = `<span>Photo here</span>`;
-            }
-        }
+       if (modalImage) {
+    if (item.image) {
+        const modalPosition = item.modalPosition || "center";
+        const modalScale = item.modalScale || "1";
 
+        modalImage.classList.remove("placeholder-image");
+        modalImage.innerHTML = `
+            <img 
+                src="${item.image}" 
+                alt="${item.name}" 
+                style="object-position: ${modalPosition}; transform: scale(${modalScale});"
+            >
+        `;
+    } else {
+        modalImage.classList.add("placeholder-image");
+        modalImage.innerHTML = `<span>Photo here</span>`;
+    }
+}
         modalBadge.classList.remove("gf-modal-badge", "vegan-modal-badge");
 
         if (item.badge === "GF") {
@@ -629,4 +637,5 @@ document.addEventListener("keydown", function (event) {
         closeMobileAllergens();
     }
 });
+
 });
