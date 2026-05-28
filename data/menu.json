@@ -56,6 +56,13 @@
       "modalScale": "1"
     },
     {
+  "name": "Vegetable Soup with Brown Bread",
+  "description": "Fresh vegetable soup served with brown bread and butter.",
+  "price": "€5",
+   "badge": "GF",
+  "image": "../assets/images/menu/savory/vegetable-soup.jpg"
+},
+    {
       "name": "Chicken Caesar Wrap",
       "description": "Chicken Caesar salad with bacon in a soft tortilla wrap.",
       "ingredients": "Chicken, Caesar salad, bacon and tortilla wrap.",
@@ -375,7 +382,7 @@
           "image": "../assets/images/menu/cakes/apple-tart.jpg"
         },
         {
-          "name": "Cinnabon",
+          "name": "Cinnamon Bun",
           "price": "€4.00",
           "image": "../assets/images/menu/cakes/cinnabon.jpg"
         },
@@ -422,13 +429,13 @@
         {
           "name": "Vegan Oat, Pistachio and Cranberry Cookie",
           "price": "€2.80",
-          "badge": "VG",
+          "badge": ["VG", "GF"],
           "image": "../assets/images/menu/cakes/vegan-oat-pistachio-cranberry-cookie.jpg"
         },
         {
           "name": "Peanut Butter Slice with Dark Chocolate",
           "price": "€4.00",
-          "badge": "VG",
+          "badge": ["VG", "GF"],
           "image": "../assets/images/menu/cakes/peanut-butter-dark-chocolate-slice.jpg"
         },
         {
@@ -437,6 +444,12 @@
           "badge": "GF",
           "image": "../assets/images/menu/cakes/lemon-drizzle.jpg"
         },
+        {
+  "name": "Coconut Friands (Raspberry & Blueberry)",
+  "price": "€3.50",
+  "badge": "GF",
+  "image": "../assets/images/menu/cakes/coconut-friands.jpg"
+},
         {
           "name": "Flapjacks",
           "price": "€3.50",
@@ -471,14 +484,9 @@
           "price": "4 for €1",
           "image": "../assets/images/menu/cakes/jellies.jpg"
         },
+        
         {
-          "name": "Pistachio & White Chocolate Protein Balls",
-          "description": "Date and nut based. €2.80 each or 2 for €5.",
-          "price": "€2.80",
-          "image": "../assets/images/menu/cakes/pistachio-white-chocolate-protein-balls.jpg"
-        },
-        {
-          "name": "Pecan Toffee Protein Balls",
+          "name": "Protein Balls (ask for flavours in café)",
           "description": "Date and nut based. €2.80 each or 2 for €5.",
           "price": "€2.80",
           "image": "../assets/images/menu/cakes/pecan-toffee-protein-balls.jpg"
@@ -496,6 +504,13 @@
           "badge": "GF",
           "image": "../assets/images/menu/cakes/lemon-drizzle.jpg"
         },
+        {
+  "name": "Coconut Friands (Raspberry & Blueberry)",
+  "description": "Light coconut friands with raspberry and blueberry.",
+  "price": "€3.50",
+  "badge": "GF",
+  "image": "../assets/images/menu/cakes/coconut-friands.jpg"
+},
         {
           "name": "Flapjacks",
           "price": "€3.50",
@@ -515,18 +530,23 @@
           "image": "../assets/images/menu/cakes/macaroons.jpg"
         },
         {
-          "name": "Pistachio & White Chocolate Protein Balls",
-          "description": "Date and nut based. €2.80 each or 2 for €5.",
-          "price": "€2.80",
-          "badge": "GF",
-          "image": "../assets/images/menu/cakes/pistachio-white-chocolate-protein-balls.jpg"
-        },
-        {
-          "name": "Pecan Toffee Protein Balls",
+          "name": " Protein Balls (ask for flavours in café)",
           "description": "Date and nut based. €2.80 each or 2 for €5.",
           "price": "€2.80",
           "badge": "GF",
           "image": "../assets/images/menu/cakes/pecan-toffee-protein-balls.jpg"
+        },
+        {
+          "name": "Vegan Oat, Pistachio and Cranberry Cookie",
+          "price": "€2.80",
+          "badge": ["VG", "GF"],
+          "image": "../assets/images/menu/cakes/vegan-oat-pistachio-cranberry-cookie.jpg"
+        },
+        {
+          "name": "Peanut Butter Slice with Dark Chocolate",
+          "price": "€4.00",
+          "badge": ["VG", "GF"],
+          "image": "../assets/images/menu/cakes/peanut-butter-dark-chocolate-slice.jpg"
         },
         {
           "name": "Granola Pots",
@@ -540,7 +560,14 @@
           "price": "€3",
           "badge": "GF",
           "image": "../assets/images/menu/scones/gluten-free-oat-banana-blueberry-scone.jpg"
-        }
+        },
+        {
+  "name": "Vegetable Soup with Brown Bread",
+  "description": "Fresh vegetable soup served with brown bread.",
+  "price": "€5",
+  "badge": "GF",
+  "image": "../assets/images/menu/savory/vegetable-soup.jpg"
+}
       ]
     },
     {
@@ -551,15 +578,25 @@
         {
           "name": "Vegan Oat, Pistachio and Cranberry Cookie",
           "price": "€2.80",
-          "badge": "VG",
+          "badge": ["VG", "GF"],
           "image": "../assets/images/menu/cakes/vegan-oat-pistachio-cranberry-cookie.jpg"
         },
         {
           "name": "Peanut Butter Slice with Dark Chocolate",
           "price": "€4.00",
-          "badge": "VG",
+          "badge": ["VG", "GF"],
           "image": "../assets/images/menu/cakes/peanut-butter-dark-chocolate-slice.jpg"
-        }
+        },
+        {
+      "name": "Curried Chickpea Toastie",
+      "description": "Curried chickpea with mango chutney, spinach, peppers and vegan cheese.",
+      "ingredients": "Curried chickpea, mango chutney, spinach, peppers and vegan cheese.",
+      "price": "€8",
+      "badge": "VG",
+      "image": "../assets/images/menu/savory/curried-chickpea-toastie.jpg",
+      "modalPosition": "50% 70%",
+      "modalScale": "1"
+    }
       ]
     },
     {

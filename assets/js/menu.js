@@ -24,8 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
 
     const milkItems = [
-        { name: "Regular Milk", price: "Included" },
-        { name: "Skinny Milk", price: "Free" },
         { name: "Oat Milk", price: "€0.50" },
         { name: "Coconut Milk", price: "€0.50" }
     ];
@@ -176,32 +174,63 @@ function hasDrinkSubtabs(categoryId) {
             return "(1,2,3)";
         }
 
-        if (categoryId === "cakes") {
-            if (name.includes("biscuit")) return "(1,6,7)";
-            if (name.includes("gingerbread")) return "(1,3,7)";
-            if (name.includes("cookie")) return "(1,3,6,7)";
-            if (name.includes("brownie")) return "(1,3,6,7)";
-            if (name.includes("carrot")) return "(1,3,4,7,8)";
-            if (name.includes("cheesecake")) return "(1,3,7,8)";
-            if (name.includes("apple")) return "(1,3,7)";
-            return "(1,3)";
-        }
+    if (categoryId === "cakes") {
+ 
+    if (name.includes("chocolate cake")) return "(1,2,3)";
+    if (name.includes("carrot cake")) return "(1,2,3,4)";
+    if (name.includes("cheesecake")) return "(1,2,3)";
+    if (name.includes("biscuit")) return "(1,2,3)";
+    if (name.includes("brownie")) return "(1,2,3)";
+    if (name.includes("apple tart")) return "(1,2,3)";
+    if (name.includes("cinnamon bun")) return "(1,2,3)";
+    if (name.includes("muffin")) return "(1,2,3)";
+    if (name.includes("cupcake")) return "(1,2,3)";
+    if (name.includes("biscoff")) return "(1,2,3)";
+    if (name.includes("banana bread")) return "(1,2,3)";
+    if (name.includes("stuffed")) return "(1,2,3,4)";
+ if (name.includes("lemon drizzle")) return "(1,2,4)";
+    if (name.includes("nutella")) return "(1,2,3,4)";
+    if (name.includes("cookies")) return "(1,2,3)";
+    if (name.includes("biscoff")) return "(1,2,3)";
+    if (name.includes("gingerbread")) return "(1,2,3)";
+   
+    
+    
+    if (name.includes("friands")) return "(1,2,4)";
+    if (name.includes("flapjack")) return "(1,8)";
+    if (name.includes("caramel")) return "(1,2)";
+    if (name.includes("macaroon")) return "(2,1,4)";
+    if (name.includes("granola")) return "(1,8)";
+    if (name.includes("protein balls")) return "(4,7,8)";
+}
 
         if (categoryId === "gluten-free") {
-            if (name.includes("lemon")) return "(0,3,7,8)";
-            if (name.includes("flapjack")) return "(0,7)";
-            if (name.includes("caramel")) return "(0,6,7)";
-            if (name.includes("friand")) return "(0,3,7,8)";
-            if (name.includes("macaroon")) return "(3,7)";
-            if (name.includes("protein")) return "(0,5,6,7,8)";
-            if (name.includes("granola")) return "(0,7,8,11)";
-            if (name.includes("scone")) return "(0,7,8,11)";
-        }
 
-        if (categoryId === "vegan") {
-            if (name.includes("oat")) return "(8,11)";
-            if (name.includes("peanut")) return "(5,7)";
-        }
+    if (name.includes("lemon drizzle")) return "(1,2,4)";
+    
+    if (name.includes("friands")) return "(1,2,4)";
+    
+    if (name.includes("flapjack")) return "(1,8)";
+    
+    if (name.includes("caramel")) return "(1,2)";
+    
+    if (name.includes("macaroon")) return "(2,1,4)";
+    
+    if (name.includes("protein balls")) return "(4,7,8)";
+    
+    if (name.includes("granola")) return "(1,8)";
+    
+    if (name.includes("scone")) return "(1,2,8)";
+    
+    if (name.includes("vegetable soup")) return "(9,1)"; 
+    // 9 = celery + bread gluten possible cross contamination
+}
+       if (categoryId === "vegan") {
+
+  
+    
+    if (name.includes("chickpea")) return "(5,6,3)";
+}
 
         return "";
     }
@@ -234,17 +263,31 @@ function hasDrinkSubtabs(categoryId) {
     }
 
     function createBadge(item) {
-        if (!item.badge) {
-            return "";
-        }
+    const name = item.name.toLowerCase();
 
-        if (item.badge === "VG") {
-            return `<span class="vegan-badge">VG</span>`;
-        }
+    // ONLY THESE ITEMS have DOUBLE badge
+    const doubleBadgeItems = [
+        "peanut butter slice",
+        
+        "cranberry"
+    ];
 
-        return `<span class="gf-badge">GF</span>`;
+    const isDouble = doubleBadgeItems.some(x => name.includes(x));
+
+    if (isDouble) {
+        return `
+            <span class="vegan-badge">VG</span>
+            <span class="gf-badge">GF</span>
+        `;
     }
 
+    if (!item.badge) return "";
+
+    if (item.badge === "VG") return `<span class="vegan-badge">VG</span>`;
+    if (item.badge === "GF") return `<span class="gf-badge">GF</span>`;
+
+    return "";
+}
     function openModal(item) {
         if (!productModal) {
             return;

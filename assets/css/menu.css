@@ -32,7 +32,9 @@
 .mobile-allergen-modal {
     display: none;
 }
-
+#menuTop {
+    scroll-margin-top: 100px;
+}
 .menu-hero {
     min-height: 280px;
     padding: 135px 8% 55px;
