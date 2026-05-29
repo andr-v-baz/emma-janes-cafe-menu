@@ -177,16 +177,28 @@
     overflow: hidden;
 }
 
+.popular-carousel-inner {
+    overflow: hidden;
+    position: relative;
+}
+
 .popular-slide {
     position: absolute;
     inset: 0;
+
     opacity: 0;
+    transform: translateX(100%);
+
+  transition:
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.9s ease;
     pointer-events: none;
-    transition: opacity 0.6s ease;
 }
 
 .popular-slide.active {
     opacity: 1;
+    transform: translateX(0);
+
     pointer-events: auto;
 }
 
@@ -389,6 +401,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
+      margin-top: -80px;
+    
 }
 .intro-text {
     position: relative;
@@ -456,7 +470,7 @@
 .photo-left {
     left: -20px;
     top: 145px;
-    width: 300px;
+    width: 00px;
     height: 330px;
     transform: rotate(-5deg);
     z-index: 4;
@@ -471,19 +485,7 @@
     z-index: 2;
 }
 
-.photo-left::before,
-.photo-right::before {
-    content: "";
-    position: absolute;
-    top: -17px;
-    left: 50%;
-    width: 96px;
-    height: 32px;
-    background: rgba(229, 202, 150, 0.72);
-    border-radius: 4px;
-    transform: translateX(-50%) rotate(-4deg);
-    z-index: 5;
-}
+
 
 .photo-right::before {
     transform: translateX(-50%) rotate(7deg);
@@ -1021,7 +1023,7 @@
 
 @media (max-width: 600px) {
     #about {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 110px;
 }
 
 #contact {
@@ -1217,23 +1219,7 @@
     margin-bottom: 30px;
 }
 
-.story-button-wrap {
-    position: relative;
-    display: flex;
-    gap: 14px;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-top: 0;
-    padding-bottom: 95px;
-}
 
-.story-button-wrap .btn {
-    min-width: 0;
-    flex: 1;
-    padding-left: 14px;
-    padding-right: 14px;
-    white-space: nowrap;
-}
 
 
 
@@ -1250,8 +1236,8 @@
 .photo-left {
     left: 2%;
     top: 130px;
-    width: 47%;
-    height: 300px;
+    width: 7%;
+    height: 400px;
     transform: rotate(-5deg);
     z-index: 4;
 }
@@ -1369,27 +1355,9 @@
         width: 100%;
         max-width: 100%;
         height: 560px;
-        overflow: hidden;
         margin-top: 10px;
     }
 
-    .photo-left {
-        left: 3%;
-        top: 80px;
-        width: 46%;
-        height: 280px;
-        transform: rotate(-5deg);
-        z-index: 4;
-    }
-
-    .photo-right {
-        right: 3%;
-        top: 145px;
-        width: 58%;
-        height: 390px;
-        transform: rotate(5deg);
-        z-index: 2;
-    }
 
     .scrapbook-photo img {
         width: 100%;
@@ -1681,26 +1649,25 @@
         width: 100%;
         max-width: 100%;
         height: 560px;
-        overflow: hidden;
         margin-top: 10px;
     }
 
     .photo-left {
         left: 3%;
-        top: 80px;
-        width: 46%;
-        height: 280px;
+        top: 220px;
+        width: 66%;
+        height: 390px;
         transform: rotate(-5deg);
-        z-index: 4;
+        z-index: 2;
     }
 
     .photo-right {
         right: 3%;
-        top: 145px;
+        top: 40px;
         width: 58%;
-        height: 390px;
+        height: 290px;
         transform: rotate(5deg);
-        z-index: 2;
+        z-index: 4;
     }
 }
 @media (min-width: 900px) and (max-width: 1200px) {
@@ -1748,31 +1715,12 @@
         overflow: hidden;
     }
 
-    .photo-left {
-        left: 6%;
-        top: 120px;
-        width: 42%;
-        height: 340px;
-    }
-
-    .photo-right {
-        right: 6%;
-        top: 180px;
-        width: 56%;
-        height: 450px;
-    }
+    
 }
 @media (max-width: 1200px) {
 
-    .photo-left {
-        top: 40px !important;
-    }
-
-    .photo-right {
-        top: 100px !important;
-    }
      .location {
-        margin-top: -10px;   
+        margin-top: 50px;   
         margin-bottom: 40px;
     }
 }
@@ -1818,21 +1766,16 @@
 }
 @media (max-width: 600px) {
 
-    /* ❌ прибираємо стрілки */
+    
     .carousel-btn {
         display: none !important;
     }
 
-    /* 👀 даємо “peek” наступного слайду */
-    .popular-carousel-inner {
-        overflow: hidden;
-        position: relative;
-    }
-
+   .popular-carousel-inner {
+    touch-action: pan-y;
+}
     .popular-slide {
-        width: 88%;
-        left: 6%;
-        border-radius: 24px;
+        transition: opacity 0.5s ease;
     }
 
     .popular-content {
@@ -1845,7 +1788,7 @@
         height: 260px;
     }
 
-    /* 🧠 підказка що можна свайпати */
+    
     .popular-carousel-inner::after {
         content: "Swipe ← →";
         position: absolute;
