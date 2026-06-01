@@ -470,7 +470,7 @@
 .photo-left {
     left: -20px;
     top: 145px;
-    width: 00px;
+    width: 300px;
     height: 330px;
     transform: rotate(-5deg);
     z-index: 4;
@@ -854,8 +854,9 @@
     }
 
     .popular-carousel {
-        width: 90%;
-    }
+    width: 84%;
+    margin: 60px auto;
+}
 
     .popular-carousel-inner {
         min-height: 650px;
@@ -1763,6 +1764,27 @@
     .popular-photo-box {
         margin: 0 auto;
     }
+}
+@media (max-width: 1200px) {
+
+    .popular-carousel {
+        margin-bottom: 50px;
+    }
+
+    .intro {
+        margin-top: 50px;
+    }
+      .photo-left {
+        top: 30px;
+    }
+
+    .photo-right {
+        top: 180px;
+    }
+     #about {
+    scroll-margin-top: 60px;
+}
+
 }
 @media (max-width: 600px) {
 

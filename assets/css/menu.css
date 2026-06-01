@@ -1611,25 +1611,25 @@ body.modal-open {
 
 /* 4. Grilled Cheese Toastie */
 .menu-panel[data-category="savory"] .modern-menu-card:nth-child(4) .modern-menu-photo img {
-    object-position: 50% 85%;
+    object-position: 50% 65%;
     transform: scale(1);
 }
 
 /* 5. Ham & Cheese Toastie */
 .menu-panel[data-category="savory"] .modern-menu-card:nth-child(5) .modern-menu-photo img {
-    object-position: 50% 60%;
+    object-position: 50% 90%;
     transform: scale(1);
 }
 
 /* 6. Garlic Chicken Toastie */
 .menu-panel[data-category="savory"] .modern-menu-card:nth-child(6) .modern-menu-photo img {
-    object-position: 60% 85%;
+    object-position: 60% 75%;
     transform: scale(1);
 }
 
 /* 7. Roast Turkey Toastie */
 .menu-panel[data-category="savory"] .modern-menu-card:nth-child(7) .modern-menu-photo img {
-    object-position: 10% 90%;
+    object-position: 10% 95%;
     transform: scale(1);
 }
 
@@ -1641,7 +1641,7 @@ body.modal-open {
 
 /* 9. Goats Cheese Toastie */
 .menu-panel[data-category="savory"] .modern-menu-card:nth-child(9) .modern-menu-photo img {
-    object-position: 50% 80%;
+    object-position: 50% 90%;
     transform: scale(1);
 }
 
@@ -1650,6 +1650,10 @@ body.modal-open {
     object-position: 50% 70%;
     transform: scale(1);
 }
+ .menu-panel[data-category="savory"] .modern-menu-card:nth-child(11) .modern-menu-photo img {
+        object-position: 50% 68%;
+        transform: scale(1);
+    }
 
 /* =========================================================
    Savory photos — tablet settings
@@ -1657,12 +1661,12 @@ body.modal-open {
 
 @media (max-width: 900px) {
     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(1) .modern-menu-photo img {
-        object-position: 50% 58%;
+        object-position: 50% 60%;
         transform: scale(1);
     }
 
     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(2) .modern-menu-photo img {
-        object-position: 50% 50%;
+        object-position: 50% 40%;
         transform: scale(1);
     }
 
@@ -1672,12 +1676,12 @@ body.modal-open {
     }
 
     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(4) .modern-menu-photo img {
-        object-position: 50% 82%;
+        object-position: 50% 52%;
         transform: scale(1);
     }
 
     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(5) .modern-menu-photo img {
-        object-position: 50% 58%;
+        object-position: 50% 88%;
         transform: scale(1);
     }
 
@@ -1687,12 +1691,12 @@ body.modal-open {
     }
 
     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(7) .modern-menu-photo img {
-        object-position: 10% 78%;
+        object-position: 10% 88%;
         transform: scale(1);
     }
 
     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(8) .modern-menu-photo img {
-        object-position: 50% 78%;
+        object-position: 50% 88%;
         transform: scale(1);
     }
 
@@ -1702,6 +1706,10 @@ body.modal-open {
     }
 
     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(10) .modern-menu-photo img {
+        object-position: 50% 68%;
+        transform: scale(1);
+    }
+     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(11) .modern-menu-photo img {
         object-position: 50% 68%;
         transform: scale(1);
     }
@@ -1723,17 +1731,17 @@ body.modal-open {
     }
 
     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(3) .modern-menu-photo img {
-        object-position: 50% 50%;
+        object-position: 50% 40%;
         transform: scale(1);
     }
 
     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(4) .modern-menu-photo img {
-        object-position: 50% 85%;
+        object-position: 50% 55%;
         transform: scale(1);
     }
 
     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(5) .modern-menu-photo img {
-        object-position: 50% 60%;
+        object-position: 50% 90%;
         transform: scale(1);
     }
 
@@ -1758,6 +1766,10 @@ body.modal-open {
     }
 
     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(10) .modern-menu-photo img {
+        object-position: 50% 85%;
+        transform: scale(1);
+    }
+     .menu-panel[data-category="savory"] .modern-menu-card:nth-child(11) .modern-menu-photo img {
         object-position: 50% 70%;
         transform: scale(1);
     }
