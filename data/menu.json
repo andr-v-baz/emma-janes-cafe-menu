@@ -374,6 +374,7 @@
         {
           "name": "Brownies",
           "price": "€4.50",
+          "badge": "GF",
           "image": "../assets/images/menu/cakes/brownies.jpg"
         },
         {
@@ -489,6 +490,7 @@
           "name": "Protein Balls (ask for flavours in café)",
           "description": "Date and nut based. €2.80 each or 2 for €5.",
           "price": "€2.80",
+          "badge": "GF",
           "image": "../assets/images/menu/cakes/pecan-toffee-protein-balls.jpg"
         }
       ]
@@ -528,6 +530,12 @@
           "price": "€2.80",
           "badge": "GF",
           "image": "../assets/images/menu/cakes/macaroons.jpg"
+        },
+         {
+          "name": "Brownies",
+          "price": "€4.50",
+          "badge": "GF",
+          "image": "../assets/images/menu/cakes/brownies.jpg"
         },
         {
           "name": " Protein Balls (ask for flavours in café)",
